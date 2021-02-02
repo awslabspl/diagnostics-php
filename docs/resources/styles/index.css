@@ -1,8 +1,8 @@
 .imgPanny {
     width: 500px;
     height: 500px;
+    alignment: center;
 }
 
 .divPanny {
-    text-align: center;
 }

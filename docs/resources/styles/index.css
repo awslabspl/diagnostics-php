@@ -4,10 +4,14 @@
     alignment: center;
 }
 
-p {
+.divPanny {
+    display: block;
+}
+
+.divPanny p {
     text-align: justify;
     font-family: "Arial Narrow", monospace;
-    font-size: 20px;
+    font-size: 18px;
     font-stretch: normal !important;
     font-style: revert;
 }

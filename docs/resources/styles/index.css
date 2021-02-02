@@ -11,5 +11,5 @@
     text-align: justify;
     font-family: "Arial Narrow", monospace;
     font-size: 18px;
-    font-stretch: extra-condensed;
+    font-stretch: normal !important;
 }

@@ -7,7 +7,7 @@
 
 p {
     text-align: justify;
-    font-family: "Arial Narrow", monospace;
+    font-family: "Arial Narrow", serif;
     font-size: 18px;
-    font-stretch: condensed;
+    font-stretch:normal;
 }

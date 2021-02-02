@@ -1,14 +1,11 @@
 .imgPanny {
     width: 500px;
     height: 500px;
-    alignment: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.divPanny {
-    display: block;
-}
-
-.divPanny p {
+p {
     text-align: justify;
     font-family: "Arial Narrow", monospace;
     font-size: 18px;

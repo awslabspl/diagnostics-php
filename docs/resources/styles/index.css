@@ -9,6 +9,5 @@ p {
     text-align: justify;
     font-family: "Arial Narrow", monospace;
     font-size: 18px;
-    font-stretch: normal !important;
-    font-style: revert;
+    font-stretch: condensed;
 }

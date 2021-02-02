@@ -9,7 +9,7 @@
 
 .parIndex {
     text-align: justify;
-    font-family: "Arial Narrow", serif;
+    font-family: "Arial Narrow", monospace;
     font-size: 18px;
-    font-stretch: expanded;
+    font-stretch: extra-condensed;
 }

@@ -18,8 +18,8 @@ div {
 
 .sourcestab {
     border: black;
-    border-style: solid;
-    border-width: 2px;
+    border-style: ridge;
+    border-width: 1px;
 }
 
 .sourcestab td {

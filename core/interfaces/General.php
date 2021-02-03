@@ -10,7 +10,7 @@ interface General
     public function getUserAgent();
     public function getHttpServerVars();
     public function getAuthType();
-    public function getDoxumentRoot();
+    public function getDocumentRoot();
     public function getGateWayInterface();
     public function getHttpAccept();
     public function getHttpEncoding();

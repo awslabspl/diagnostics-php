@@ -18,19 +18,15 @@ div {
 
 .sourcestab {
     border: black;
-    border-style: ridge;
+    border-collapse: collapse;
     border-width: 1px;
 }
 
 .sourcestab tr {
-    border: black;
-    border-style: inherit;
-    border-width: 0.5px;
+    border: solid thin;
 }
 
 .sourcestab td {
     text-align: center;
-    border: black;
-    border-style: inherit;
-    border-width: 0.5px;
+    border: solid thin;
 }

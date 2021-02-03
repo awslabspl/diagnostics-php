@@ -4,6 +4,7 @@
 namespace diagnosticsphp\core\remoteInfoClass;
 
 
+use diagnosticsphp\core\rii\RemoteInfoInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
@@ -21,7 +22,7 @@ abstract class RemoteInfoClass implements RemoteInfoInterface, LoggerInterface
             echo $this->rh;
         } else {
             // @todo Think of something better
-            $this->log(LogLevel::ERROR, "Cannot be empty.");
+            $this->log(LogLevel::ERROR, VAR_CANNOT_BE_EMPTY);
         }
     }
 
@@ -31,7 +32,7 @@ abstract class RemoteInfoClass implements RemoteInfoInterface, LoggerInterface
         if (isset($this->ra)){
             echo $this->ra;
         } else {
-            $this->log(LogLevel::ERROR, "Cannot be empty.");
+            $this->log(LogLevel::ERROR, VAR_CANNOT_BE_EMPTY);
         }
     }
 
@@ -41,7 +42,7 @@ abstract class RemoteInfoClass implements RemoteInfoInterface, LoggerInterface
         if (isset($this->rp)){
             echo $this->rp;
         } else {
-            $this->log(LogLevel::ERROR, "Cannot be empty.");
+            $this->log(LogLevel::ERROR, VAR_CANNOT_BE_EMPTY);
         }
     }
 }

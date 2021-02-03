@@ -4,6 +4,7 @@
 namespace diagnosticsphp\core\serverClass;
 
 
+use diagnosticsphp\core\serverInfoInterface\ServerInfoInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
@@ -26,7 +27,7 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
             // @todo Implement something more sophisticated
             echo $this->sa;
         } else {
-            $this->log(LogLevel::ERROR, "");
+            $this->log(LogLevel::ERROR, NO_SERVER_ADR_DEFINED);
         }
     }
 
@@ -37,7 +38,7 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
             // @todo Implement something more sophisticated
             echo $this->sai;
         } else {
-            $this->log(LogLevel::ERROR, "Who the server admin is/whatever callback is");
+            $this->log(LogLevel::ERROR, SERVER_ADMIN_INFO);
         }
     }
 
@@ -47,7 +48,7 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
             // @todo Implement something more sophisticated
             echo $this->sn;
         } else {
-            $this->log(LogLevel::ERROR, "No human-readable name was given/var not reachable");
+            $this->log(LogLevel::ERROR, NO_SERVER_NAME);
         }
     }
 

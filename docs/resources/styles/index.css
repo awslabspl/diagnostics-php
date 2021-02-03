@@ -5,9 +5,15 @@
     padding-left: 5px;
 }
 
-p {
+div {
     text-align: justify;
     font-family: "Arial Narrow", serif;
     font-size: 36px;
     font-stretch:normal;
+}
+
+.sourcestab {
+    border: black;
+    border-style: solid;
+    border-width: 2px;
 }

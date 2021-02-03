@@ -1,3 +1,7 @@
+body {
+    font-size: 18px !important;
+}
+
 .imgPanny {
     width: 650px;
     height: 500px;
@@ -5,9 +9,24 @@
     padding-left: 5px;
 }
 
-p {
+div {
     text-align: justify;
     font-family: "Arial Narrow", serif;
-    font-size: 36px;
     font-stretch:normal;
+    font-size: inherit;
+}
+
+.sourcestab {
+    border: black;
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+.sourcestab tr {
+    border: solid thin;
+}
+
+.sourcestab td {
+    text-align: center;
+    border: solid thin;
 }

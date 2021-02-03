@@ -3,9 +3,9 @@
 namespace Psr\Log\Test;
 
 /**
- * This class is internal and does not follow the BC promise.
+ * This classes is internal and does not follow the BC promise.
  *
- * Do NOT use this class in any way.
+ * Do NOT use this classes in any way.
  *
  * @internal
  */

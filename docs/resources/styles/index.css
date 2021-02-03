@@ -22,6 +22,12 @@ div {
     border-width: 1px;
 }
 
+.sourcestab tr {
+    border: black;
+    border-style: inherit;
+    border-width: 0.5px;
+}
+
 .sourcestab td {
     text-align: center;
     border: black;

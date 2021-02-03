@@ -23,6 +23,7 @@ div {
 }
 
 .sourcestab td {
+    text-align: center;
     border: black;
     border-style: inherit;
     border-width: 0.5px;

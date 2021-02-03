@@ -4,8 +4,11 @@
 namespace diagnosticsphp\core;
 
 
-class ServerClass implements ServerInfoInterface
-{
+use Psr\Log\LoggerInterface;
+use Psr\Log\LogLevel;
+
+abstract class ServerClass implements ServerInfoInterface, LoggerInterface
+ {
     // Server Address
     private $sa;
     private $sai;
@@ -22,7 +25,7 @@ class ServerClass implements ServerInfoInterface
             // @todo Implement something more sophisticated
             echo $this->sa;
         } else {
-            // Error
+            $this->log(LogLevel::ERROR, "No public IP given/available");
         }
     }
 
@@ -33,7 +36,7 @@ class ServerClass implements ServerInfoInterface
             // @todo Implement something more sophisticated
             echo $this->sai;
         } else {
-            // Error
+            $this->log(LogLevel::ERROR, "Who the server admin is/whatever callback is");
         }
     }
 
@@ -43,7 +46,7 @@ class ServerClass implements ServerInfoInterface
             // @todo Implement something more sophisticated
             echo $this->sn;
         } else {
-            // Error
+            $this->log(LogLevel::ERROR, "No human-readable name was given/var not reachable");
         }
     }
 
@@ -53,7 +56,7 @@ class ServerClass implements ServerInfoInterface
             // @todo Implement something more sophisticated
             echo $this->sport;
         } else {
-            // Error
+            $this->log(LogLevel::NOTICE, $this->sport);
         }
     }
 
@@ -63,7 +66,7 @@ class ServerClass implements ServerInfoInterface
             // @todo Implement something more sophisticated
             echo $this->sprot;
         } else {
-            // Error
+            $this->log(LogLevel::NOTICE, $this->sprot);
         }
     }
 
@@ -73,7 +76,7 @@ class ServerClass implements ServerInfoInterface
             // @todo Implement something more sophisticated
             echo $this->ssign;
         } else {
-            // Error
+            $this->log(LogLevel::NOTICE, $this->ssign);
         }
     }
 
@@ -83,7 +86,7 @@ class ServerClass implements ServerInfoInterface
             // @todo Implement something more sophisticated
             echo $this->ssoft;
         } else {
-            // Error
+            $this->log(LogLevel::NOTICE, $this->ssoft);
         }
     }
 }

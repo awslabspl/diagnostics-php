@@ -20,7 +20,7 @@ abstract class ScriptClass implements ScriptInfoInterface, LoggerInterface
             echo $this->scn;
         } else {
             echo $this->scn;
-            $this->log(LogLevel::NOTICE, $this->scn);
+            $this->log(LogLevel::NOTICE, "Script name: ".$this->scn);
         }
     }
 
@@ -31,7 +31,7 @@ abstract class ScriptClass implements ScriptInfoInterface, LoggerInterface
             echo $this->sfn;
         } else {
             echo $this->sfn;
-            $this->log(LogLevel::NOTICE, $this->sfn);
+            $this->log(LogLevel::NOTICE, "File name: ".$this->sfn);
         }
     }
 }

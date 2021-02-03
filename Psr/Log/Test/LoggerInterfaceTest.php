@@ -7,9 +7,9 @@ use Psr\Log\LogLevel;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Provides a base test class for ensuring compliance with the LoggerInterface.
+ * Provides a base test classes for ensuring compliance with the LoggerInterface.
  *
- * Implementors can extend the class and implement abstract methods to run this
+ * Implementors can extend the classes and implement abstract methods to run this
  * as part of their test suite.
  */
 abstract class LoggerInterfaceTest extends TestCase

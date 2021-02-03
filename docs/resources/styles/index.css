@@ -19,14 +19,16 @@ div {
 .sourcestab {
     border: black;
     border-collapse: collapse;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 .sourcestab tr {
     border: solid thin;
+    border-width: 0.75px;
 }
 
 .sourcestab td {
     text-align: center;
     border: solid thin;
+    border-width: 0.5px;
 }

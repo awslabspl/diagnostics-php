@@ -1,7 +1,7 @@
 <?php
 
 
-namespace diagnosticsphp\core;
+namespace diagnosticsphp\core\remoteInfoClass;
 
 
 use Psr\Log\LoggerInterface;

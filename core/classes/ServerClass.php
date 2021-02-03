@@ -1,7 +1,7 @@
 <?php
 
 
-namespace diagnosticsphp\core;
+namespace diagnosticsphp\core\serverClass;
 
 
 use Psr\Log\LoggerInterface;
@@ -9,7 +9,6 @@ use Psr\Log\LogLevel;
 
 abstract class ServerClass implements ServerInfoInterface, LoggerInterface
 {
-
     // Server Address
     private $sa;
     private $sai;
@@ -27,7 +26,7 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
             // @todo Implement something more sophisticated
             echo $this->sa;
         } else {
-            $this->log(LogLevel::ERROR, "No public IP given/available");
+            $this->log(LogLevel::ERROR, "");
         }
     }
 

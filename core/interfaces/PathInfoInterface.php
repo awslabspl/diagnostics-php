@@ -1,7 +1,7 @@
 <?php
 
 
-namespace diagnosticsphp\core;
+namespace diagnosticsphp\core\pathInfoInterface;
 
 
 interface PathInfoInterface

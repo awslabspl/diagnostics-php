@@ -8,7 +8,8 @@ use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
 abstract class ServerClass implements ServerInfoInterface, LoggerInterface
- {
+{
+
     // Server Address
     private $sa;
     private $sai;
@@ -20,6 +21,7 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
 
     public function getServerAddress()
     {
+        include './core/defines/definesClass.php';
         $this->sa = $_SERVER['SERVER_ADDR'];
         if (isset($this->sa)){
             // @todo Implement something more sophisticated

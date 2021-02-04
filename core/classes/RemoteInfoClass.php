@@ -8,6 +8,11 @@ use diagnosticsphp\core\rii\RemoteInfoInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
+/**
+ * Class RemoteInfoClass
+ * @package diagnosticsphp\core\remoteInfoClass
+ * @version 0.1
+ */
 abstract class RemoteInfoClass implements RemoteInfoInterface, LoggerInterface
 {
 
@@ -15,6 +20,9 @@ abstract class RemoteInfoClass implements RemoteInfoInterface, LoggerInterface
     private $ra;
     private $rp;
 
+    /**
+     * @since 0.1-pre
+     */
     public function getRemoteHost()
     {
         $this->rh = $_SERVER['REMOTE_ADDR'];
@@ -26,6 +34,9 @@ abstract class RemoteInfoClass implements RemoteInfoInterface, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getRemoteAddress()
     {
         $this->ra = $_SERVER['REMOTE_ADDR'];
@@ -36,6 +47,9 @@ abstract class RemoteInfoClass implements RemoteInfoInterface, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getRemotePort()
     {
         $this->rp = $_SERVER['REMOTE_PORT'];

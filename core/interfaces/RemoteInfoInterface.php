@@ -12,7 +12,21 @@ namespace diagnosticsphp\core\rii;
  */
 interface RemoteInfoInterface
 {
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getRemoteHost();
+
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getRemoteAddress();
+
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getRemotePort();
 }

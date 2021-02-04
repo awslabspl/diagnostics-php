@@ -12,6 +12,15 @@ namespace diagnosticsphp\core\scriptInfoInterface;
  */
 interface ScriptInfoInterface
 {
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getScriptName();
+
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getScriptFileName();
 }

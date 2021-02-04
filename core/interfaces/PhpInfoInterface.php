@@ -12,7 +12,21 @@ namespace diagnosticsphp\core\phpInfoInterface;
  */
 interface PhpInfoInterface
 {
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getAuthBrokerInfo();
+
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getAuthUserInfo();
+
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getPhpInfo();
 }

@@ -12,6 +12,15 @@ namespace diagnosticsphp\core\pathInfoInterface;
  */
 interface PathInfoInterface
 {
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getpathInfo();
+
+    /**
+     * @since 0.1
+     * @return mixed
+     */
     public function getPathTranslationInfo();
 }

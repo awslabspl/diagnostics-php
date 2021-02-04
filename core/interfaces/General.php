@@ -3,7 +3,13 @@
 
 namespace diagnosticsphp\core\generalInterface;
 
-
+/**
+ * Interface General
+ * @package diagnosticsphp\core\generalInterface
+ * @version 0.1
+ *
+ * Imports general tests
+ */
 interface General
 {
     // Misc

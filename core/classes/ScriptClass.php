@@ -10,6 +10,7 @@ use Psr\Log\LogLevel;
 /**
  * Class ScriptClass
  * @package diagnosticsphp\core\scriptClass
+ * @version 0.1
  */
 abstract class ScriptClass implements ScriptInfoInterface, LoggerInterface
 {

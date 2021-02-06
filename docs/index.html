@@ -11,7 +11,20 @@
     <title>Diagnostics PHP</title>
 </head>
 <body>
-<script type="javascript" rel="script" src="./resources/js/tabbedIndex.js"></script>
+<script type="javascript" rel="script">
+    $('.tabs a').click(function(){
+        $this = $(this);
+        $('.panel').hide();
+        $('.tabs').removeClass('active').addClass('inactive');
+        $this.addClass('active').blur();
+        var panelContainerColor = $this.css('background-color');
+        $('.panelContainer').css({backgroundColor: panelContainerColor});
+        var panel = $this.attr('href');
+        $(panel).fadeIn(350);
+        return false;
+    });//end click
+    $('.tabs li:first a').click();
+</script>
 <div class="tabbedPanels">
     <ul class="tabs">
         <li><a href="#panel1" class = "tabOne">About</a></li>
@@ -48,8 +61,7 @@
                         <p class = "panelContent"><span></span></p>
                     </div>
                 </div>
-        </div>
-
+            </div>
         </div>
         <div class="panel" id="panel2">
             <h1 class = "panelContent">Details</h1>

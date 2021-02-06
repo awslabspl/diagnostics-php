@@ -11,72 +11,42 @@
     <title>Diagnostics PHP</title>
 </head>
 <body>
-<script type="javascript" rel="script">
-    $('.tabs a').click(function(){
-        $this = $(this);
-        $('.panel').hide();
-        $('.tabs').removeClass('active').addClass('inactive');
-        $this.addClass('active').blur();
-        var panelContainerColor = $this.css('background-color');
-        $('.panelContainer').css({backgroundColor: panelContainerColor});
-        var panel = $this.attr('href');
-        $(panel).fadeIn(350);
-        return false;
-    });//end click
-    $('.tabs li:first a').click();
-</script>
-<div class="tabbedPanels">
-    <ul class="tabs">
-        <li><a href="#panel1" class = "tabOne">About</a></li>
-        <li><a href="#panel2" class = "tabTwo inactive">Details</a></li>
-        <li><a href="#panel3" class = "tabThree inactive">Contact</a></li>
-    </ul>
-    <div class="panelContainer">
-        <div class="panel" id="panel1">
-            <h1 class = "panelContent">About</h1>
-            <p class = "panelContent">
-            <div class="tabbedPanels">
-                <ul class="tabs">
-                    <li><a href="#panel1" class = "tabOne">About</a></li>
-                    <li><a href="#panel2" class = "tabTwo inactive">Details</a></li>
-                    <li><a href="#panel3" class = "tabThree inactive">Contact</a></li>
-                </ul>
-                <div class="panelContainer">
-                    <div class="panel" id="panel1">
-                        <h1 class = "panelContent">About</h1>
-                        <p class = "panelContent"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum magni error enim labore facere dolore obcaecati voluptate inventore nemo. Dolorum ipsam fuga nesciunt eos incidunt eum beatae quisquam enim.</span><span>Veniam velit quibusdam pariatur et autem veritatis nesciunt minima! Voluptas impedit voluptates amet dolores debitis labore asperiores quis libero est magnam voluptatum alias praesentium magni deserunt beatae optio quam itaque!</span></p>
-
-                    </div>
-                    <div class="panel" id="panel2">
-                        <h1 class = "panelContent">Details</h1>
-                        <p class = "panelContent"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum magni error enim labore facere dolore obcaecati voluptate inventore nemo. Dolorum ipsam fuga nesciunt eos incidunt eum beatae quisquam enim.</span><span>Veniam velit quibusdam pariatur et autem veritatis nesciunt minima! Voluptas impedit voluptates amet dolores debitis labore asperiores quis libero est magnam voluptatum alias praesentium magni deserunt beatae optio quam itaque!</span></p>
-                        <p class = "panelContent"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum magni error enim labore facere dolore obcaecati voluptate inventore nemo. Dolorum ipsam fuga nesciunt eos incidunt eum beatae quisquam enim.</span><span>Veniam velit quibusdam pariatur et autem veritatis nesciunt minima! Voluptas impedit voluptates amet dolores debitis labore asperiores quis libero est magnam voluptatum alias praesentium magni deserunt beatae optio quam itaque!</span></p>
-                    </div>
-                    <div class="panel" id="panel2">
-                        <h1 class = "panelContent">Details</h1>
-                        <p class = "panelContent"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum magni error enim labore facere dolore obcaecati voluptate inventore nemo. Dolorum ipsam fuga nesciunt eos incidunt eum beatae quisquam enim.</span><span>Veniam velit quibusdam pariatur et autem veritatis nesciunt minima! Voluptas impedit voluptates amet dolores debitis labore asperiores quis libero est magnam voluptatum alias praesentium magni deserunt beatae optio quam itaque!</span></p>
-                    </div>
-                    <div class="panel" id="panel3">
-                        <h1 class = "panelContent">Contact</h1>
-                        <p class = "panelContent"><span></span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panel" id="panel2">
-            <h1 class = "panelContent">Details</h1>
-            <p class = "panelContent"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum magni error enim labore facere dolore obcaecati voluptate inventore nemo. Dolorum ipsam fuga nesciunt eos incidunt eum beatae quisquam enim.</span><span>Veniam velit quibusdam pariatur et autem veritatis nesciunt minima! Voluptas impedit voluptates amet dolores debitis labore asperiores quis libero est magnam voluptatum alias praesentium magni deserunt beatae optio quam itaque!</span></p>
-            <p class = "panelContent"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum magni error enim labore facere dolore obcaecati voluptate inventore nemo. Dolorum ipsam fuga nesciunt eos incidunt eum beatae quisquam enim.</span><span>Veniam velit quibusdam pariatur et autem veritatis nesciunt minima! Voluptas impedit voluptates amet dolores debitis labore asperiores quis libero est magnam voluptatum alias praesentium magni deserunt beatae optio quam itaque!</span></p>
-        </div>
-        <div class="panel" id="panel2">
-            <h1 class = "panelContent">Details</h1>
-            <p class = "panelContent"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum magni error enim labore facere dolore obcaecati voluptate inventore nemo. Dolorum ipsam fuga nesciunt eos incidunt eum beatae quisquam enim.</span><span>Veniam velit quibusdam pariatur et autem veritatis nesciunt minima! Voluptas impedit voluptates amet dolores debitis labore asperiores quis libero est magnam voluptatum alias praesentium magni deserunt beatae optio quam itaque!</span></p>
-        </div>
-        <div class="panel" id="panel3">
-            <h1 class = "panelContent">Contact</h1>
-            <p class = "panelContent"><span></span></p>
-        </div>
-    </div>
+<div>
+    <table class="sourcestab">
+        <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Diagnostics-php</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>Super-lightweight framework for testing PHP</td>
+        </tr>
+        <tr>
+            <td>Main repository</td>
+            <td><a class="btn btn-link" href="https://github.com/awslabspl/diagnostics-php" target="_blank">GitHub</a></td>
+        </tr>
+        <tr>
+            <td>Current version</td>
+            <td><a class="btn btn-link" target="_blank" href="https://github.com/awslabspl/diagnostics-php/releases/tag/0.1-pre">0.1-pre</a> </td>
+        </tr>
+        <tr>
+            <td>Comment</td>
+            <td><strong>Do not</strong> use it on <code>production</code></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<hr>
+<div>
+    <table class="sourcestab">
+        <tbody>
+        <tr>
+            <td>Quick start guide</td>
+            <td><a class="btn btn-link" target="_blank" href="https://github.com/awslabspl/diagnostics-php/blob/master/docs/md/quickstart.md">Quickstart</a></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 </body>
 </html>

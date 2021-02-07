@@ -13,9 +13,12 @@
 <body>
 <!-- JS script-->
 <script type="text/javascript" charset="UTF-8">
-    import currentTime from "Date";
-    console.clear();
-    console.log(console.timeLog("Date finished: ", currentTime));
+    var currentdate = new Date();
+    var datetime = "Last Sync: " + currentdate.getDay() + "/" + currentdate.getMonth()
+        + "/" + currentdate.getFullYear() + " @ "
+        + currentdate.getHours() + ":"
+        + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+    console.log(datetime);
 </script>
 <!-- Not working as expected on Safari.
 @Todo: Investigate and make it browser-independent -->

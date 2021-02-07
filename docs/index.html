@@ -13,7 +13,9 @@
 <body>
 <!-- JS script-->
 <script type="text/javascript" charset="UTF-8">
-    console.log("Page loaded");
+    import { currentTime } from "Date";
+    console.clear();
+    console.log(console.timeLog("Date finished: ", currentTime));
 </script>
 <!-- Not working as expected on Safari.
 @Todo: Investigate and make it browser-independent -->

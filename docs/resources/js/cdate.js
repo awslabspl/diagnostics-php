@@ -1,5 +1,5 @@
 let currentdate = new Date();
-let datetime = currentdate.getMonth().toPrecision(2)
+let datetime = currentdate.getMonth()
     + "/" + currentdate.getFullYear() + " @ "
     + currentdate.getHours() + ":"
     + currentdate.getMinutes();

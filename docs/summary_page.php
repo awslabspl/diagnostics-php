@@ -10,7 +10,9 @@
     <title>Diagnostics || Summary</title>
 </head>
 <body>
-
+<div class="alert alert-info">
+    Page loaded.
+</div>
 </body>
 </html>
 

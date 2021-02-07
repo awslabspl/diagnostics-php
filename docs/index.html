@@ -11,15 +11,6 @@
     <title>Diagnostics PHP</title>
 </head>
 <body>
-<!-- JS script-->
-<script type="text/javascript" charset="UTF-8">
-    let currentdate = new Date();
-    let datetime = currentdate.getMonth()
-        + "/" + currentdate.getFullYear() + " @ "
-        + currentdate.getHours() + ":"
-        + currentdate.getMinutes();
-    console.log(datetime);
-</script>
 <!-- Not working as expected on Safari.
 @Todo: Investigate and make it browser-independent -->
 <div class="alert alert-success alert-dismissible">
@@ -52,7 +43,7 @@
         </tr>
         <tr>
             <td>Last sync date</td>
-            <td><script charset="UTF-8" type="text/javascript">
+            <td><script charset="UTF-8" type="text/javascript" src="resources/js/cdate.js">
                 document.write(datetime);
             </script> </td>
         </tr>

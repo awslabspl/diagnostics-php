@@ -1,14 +1,12 @@
 $('.tabs a').click(function(){
-    panelContainerColor = $(this);
+    $this = $(this);
     $('.panel').hide();
     $('.tabs').removeClass('active').addClass('inactive');
     $this.addClass('active').blur();
-    var panelContainerColor = panelContainerColor.css('background-color');
+    var panelContainerColor = $this.css('background-color');
     $('.panelContainer').css({backgroundColor: panelContainerColor});
-    var panel = panelContainerColor.attr('href');
+    var panel = $this.attr('href');
     $(panel).fadeIn(350);
     return false;
 });//end click
 $('.tabs li:first a').click();
-
-export var getWindowData = window.name.toString();

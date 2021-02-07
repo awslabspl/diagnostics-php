@@ -13,6 +13,11 @@
 <div class="alert alert-info">
     Page loaded.
 </div>
+<div>
+    <script src="./resources/js/summary_fn.js">
+            console.log(al)
+    </script>
+</div>
 </body>
 </html>
 

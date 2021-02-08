@@ -29,7 +29,6 @@ $dark-blue: darken($main-blue, 28%);
   padding: 10px 15px;
   box-sizing:border-box;
   width:8rem;
-  color:black;
   border-radius: 10px 10px 0 0;
   font-family: 'Raleway';
   font-weight:700;
@@ -45,6 +44,10 @@ $dark-blue: darken($main-blue, 28%);
 
     }
   }
+}
+
+.tabs a {
+  color:black;
 }
 
 .tabs a.active {

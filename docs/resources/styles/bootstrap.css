@@ -3107,6 +3107,7 @@ fieldset:disabled a.btn {
   color: #1e7e34;
   border-color: #1e7e34;
   text-decoration: none;
+  background-color: #bee5eb;
 }
 
 .btn-link:focus, .btn-link.focus {

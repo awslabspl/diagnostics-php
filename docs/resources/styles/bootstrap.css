@@ -74,6 +74,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  text-align: justify;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -173,10 +174,7 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-pre,
-code,
-kbd,
-samp {
+pre, code, kbd, samp, .kod {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
 }

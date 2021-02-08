@@ -3100,10 +3100,12 @@ fieldset:disabled a.btn {
   font-weight: 400;
   color: #1c7430;
   text-decoration: none;
+  border-color: #1c7430;
 }
 
 .btn-link:hover {
   color: #1e7e34;
+  border-color: #1e7e34;
   text-decoration: none;
 }
 

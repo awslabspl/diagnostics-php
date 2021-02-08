@@ -21,11 +21,12 @@ div {
     font-stretch:normal;
     font-size: inherit;
 }
-
+/**
+Added shorthand
+ */
 .sourcestab {
-    border: black;
     border-collapse: collapse;
-    border-width: 2px;
+    border: 2px black;
 }
 
 .sourcestab tr {

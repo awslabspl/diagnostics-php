@@ -8,6 +8,13 @@ use diagnosticsphp\core\generalInterface\General;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
+/**
+ * Class GeneralInfoClass
+ * @package diagnosticsphp\core\generalInfoClass
+ * @version 0.1
+ *
+ * This abstract class tests all the HTTP_* subarrays
+ */
 abstract class GeneralInfoClass implements General, LoggerInterface
 {
     private $ua;
@@ -24,6 +31,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     private $httpReferer;
     private $https;
 
+    /**
+     * @since 0.1-pre
+     */
     public function getUserAgent()
     {
         include '../defines/definesClass.php';
@@ -35,6 +45,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getHttpServerVars()
     {
         $this->httpServersVars = HTTP_SERVER_VARS;
@@ -45,6 +58,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getAuthType()
     {
         $this->authType = $_SERVER['AUTH_TYPE'];
@@ -55,6 +71,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getDocumentRoot()
     {
         $this->docRoot = $_SERVER['DOCUMENT_ROOT'];
@@ -65,6 +84,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getGateWayInterface()
     {
         $this->gwi = $_SERVER['GATEWAY_INTERFACE'];
@@ -75,6 +97,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getHttpAccept()
     {
         $this->httpAccept = $_SERVER['HTTP_ACCEPT'];
@@ -83,6 +108,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getHttpEncoding()
     {
         $this->httpEncoding = $_SERVER['HTTP_ACCEPT_ENCODING'];
@@ -91,6 +119,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getCharset()
     {
         $this->charset = $_SERVER['HTTP_ACCEPT_CHARSET'];
@@ -99,6 +130,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getUsedLanguage()
     {
         $this->usedRealLanguage = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
@@ -107,12 +141,18 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getConnectionDetails()
     {
         $this->connDetails = $_SERVER['HTTP_CONNECTION'];
         print_r($this->connDetails);
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getHttpHost()
     {
         $this->httpHost = $_SERVER['HTTP_HOST'];
@@ -123,6 +163,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getHttpReferer()
     {
         $this->httpReferer = $_SERVER['HTTP_REFERER'];
@@ -133,6 +176,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getHttps()
     {
         $this->https = $_SERVER['HTTPS'];

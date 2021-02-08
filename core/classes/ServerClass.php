@@ -8,6 +8,13 @@ use diagnosticsphp\core\serverInfoInterface\ServerInfoInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
+/**
+ * Class ServerClass
+ * @package diagnosticsphp\core\serverClass
+ * @version 0.1
+ *
+ * WARMING: This class returns potentially dangerous info. Use wisely!
+ */
 abstract class ServerClass implements ServerInfoInterface, LoggerInterface
 {
     // Server Address
@@ -19,6 +26,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
     private $ssign;
     private $ssoft;
 
+    /**
+     * @since 0.1-pre
+     */
     public function getServerAddress()
     {
         include './core/defines/definesClass.php';
@@ -31,6 +41,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getServerAdminInfo()
     {
         $this->sai = $_SERVER['SERVER_ADMIN'];
@@ -42,6 +55,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getServerName()
     {
         if (isset($this->sn)){
@@ -52,6 +68,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getServerPort()
     {
         if (isset($this->sport)){
@@ -62,6 +81,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getServerProtocol()
     {
         if (isset($this->sprot)){
@@ -72,6 +94,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getServerSignature()
     {
         if (isset($this->ssign)){
@@ -82,6 +107,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
         }
     }
 
+    /**
+     * @since 0.1-pre
+     */
     public function getServerSoftware()
     {
         if (isset($this->ssoft)){

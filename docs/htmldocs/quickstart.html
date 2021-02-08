@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags::
+* Turn the spellcheck OFF
+* Make all content x-ua compatible
+* Make this web responsive
+* Set charset to UTF-8
+* Apply CSS ( 5 > 7 )
+* Apply JS ( 8 > 9 )
+* Set title
+-->
+    <meta spellcheck="false">
+    <meta http-equiv="x-ua-compatible" content="*/*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../resources/styles/index.css" type="text/css"/>
+    <link rel="stylesheet" href="../resources/styles/bootstrap.css" type="text/css">
+    <title>Docs :: Quickstart</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="h1">Quickstart guide</h1>
+    <h2 class="h2">General info</h2>
+        Just follow simple steps:
+    <ul class="list-inline">
+    <li class="list-inline-item">go to [download page](https://github.com/awslabspl/diagnostics-php/releases),</li>
+    <li class="list-inline-item">download **latest** stable release,</li>
+    <li class="list-inline-item">unzip source to folder thats accessible from webserver ( consult your webservers' manual ).</li>
+    <li class="list-inline-item">edit `$project_config_file` to reflect your current setup,</li>
+    <li class="list-inline-item">from your project, just load desired class(-es).</li>
+    </ul>
+    <h2 class="h2">How to load classes in PHP</h2>
+        This software makes extensive use of <a class="btn btn-link" target="_blank" href="https://www.php.net/manual/en/language.oop5.autoload.php">autoload</a> feature.
+        So, there is no need to do extensive "workout": just follow the simple ( language-standard ) way:<hr>
+        <code class="kod">$class = new ClassInstance();</code> and than you will be able to access all class's members like this: <code class="kod">$class->memberName();</code>
+</div>
+</body>
+</html>

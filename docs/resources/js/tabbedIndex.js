@@ -8,5 +8,5 @@ $('.tabs a').click(function(){
     var panel = $this.attr('href');
     $(panel).fadeIn(350);
     return false;
-});//end click
+});
 $('.tabs li:first a').click();

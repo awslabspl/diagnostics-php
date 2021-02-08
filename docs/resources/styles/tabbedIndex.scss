@@ -30,7 +30,7 @@ $dark-blue: darken($main-blue, 28%);
   box-sizing:border-box;
   width:8rem;
   border-radius: 10px 10px 0 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', cursive;
   font-weight:700;
   font-size: 1.2rem;
   color:white;
@@ -85,10 +85,14 @@ $dark-blue: darken($main-blue, 28%);
 
 .panelContent {
   line-height:1.5;
-  font-family: Raleway;
   padding: 0 1rem;
   font-size: 1.2rem;
 }
+
+.panelContent {
+  font-family: Raleway, sans-serif;
+}
+
 h1.panelContent {
   font-size: 2.2rem;
 }

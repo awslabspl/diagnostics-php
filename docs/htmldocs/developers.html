@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags::
+* Turn the spellcheck OFF
+* Make all content x-ua compatible
+* Make this web responsive
+* Set charset to UTF-8
+* Apply CSS ( 5 > 7 )
+* Apply JS ( 8 > 9 )
+* Set title
+-->
+    <meta spellcheck="false">
+    <meta http-equiv="x-ua-compatible" content="*/*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../resources/styles/index.css" type="text/css"/>
+    <link rel="stylesheet" href="../resources/styles/bootstrap.css" type="text/css">
+    <title>Docs :: For developers</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="h1"> Guide for developers</h1><hr>
+    <h2 class="h2">Rule of three</h2>
+    If you are working on new functionality, **always** write three **separate** files:
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">* class ( `.php` extension; placed in `/core/classess` ),</li>
+        <li class="list-group-item">* interface for all members within this class ( `.php` extension; placed in `/core/interfaces` ),</li>
+        <li class="list-group-item">* test ( `.php` extension; placed in `/tests/` )</li>
+    </ul>
+</div>
+<div class="text-center p-3 customfooter">
+    (c) 2020 :: <a charset="UTF-8" class="text-dark" href="ttps://github.com/awslabspl" target="_blank">awslabspl</a> || <a class="btn btn-link" href="../index.html">Index page</a>
+</div>
+</body>
+</html>

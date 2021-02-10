@@ -14,3 +14,5 @@ define ('SERVER_ACCEPTS', "Headers accepted by server.");
 define ('NO_HOSTNAME_SET', "No hostname is set. Using default one");
 define ('NO_REFERER_SET', "No referer set. Site accessed directly");
 define ('NO_HTTPS', "No HTTPS is set.");
+//
+define('OBJECT_IS_ELIGIBLE_FOR_DELETION', 'Object can be deleted safely');

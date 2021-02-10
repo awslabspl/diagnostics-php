@@ -1,8 +1,5 @@
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+/**
+todo: see whats :root
  */
 :root {
   --blue: #007bff;
@@ -34,7 +31,9 @@
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
+/**
+todo: is it really neccesary?
+ */
 *,
 *::before,
 *::after {
@@ -42,10 +41,15 @@
 }
 
 html {
-  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/**
+Extracted
+ */
+html {
+  font-family: sans-serif;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -74,6 +78,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  text-align: justify;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -83,16 +88,16 @@ p {
   margin-bottom: 1rem;
 }
 
-abbr[title],
+/*abbr[title],
 abbr[data-original-title] {
-  text-decoration: underline;
+  text-decoration: none;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
-}
+}*/
 
 address {
   margin-bottom: 1rem;
@@ -100,17 +105,12 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul,
-dl {
+ol, ul, dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
+ol ol, ul ul, ol ul, ul ol {
   margin-bottom: 0;
 }
 
@@ -127,8 +127,7 @@ blockquote {
   margin: 0 0 1rem;
 }
 
-b,
-strong {
+b, strong {
   font-weight: bolder;
 }
 
@@ -136,8 +135,7 @@ small {
   font-size: 80%;
 }
 
-sub,
-sup {
+sub, sup {
   position: relative;
   font-size: 75%;
   line-height: 0;
@@ -160,7 +158,7 @@ a {
 
 a:hover {
   color: #0056b3;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:not([href]):not([class]) {
@@ -173,10 +171,7 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-pre,
-code,
-kbd,
-samp {
+pre, code, kbd, samp, .kod {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
 }
@@ -610,11 +605,17 @@ pre code {
 }
 
 .col {
-  -ms-flex-preferred-size: 0;
   flex-basis: 0;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+}
+
+.col {
+  -ms-flex-positive: 1;
 }
 
 .row-cols-1 > * {
@@ -3097,17 +3098,19 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #1c7430;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #1e7e34;
+  border-color: #1e7e34;
+  text-decoration: none;
+  background-color: #bee5eb;
 }
 
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .btn-link:disabled, .btn-link.disabled {
@@ -4990,7 +4993,7 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -5349,7 +5352,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-info hr {
   border-top-color: #abdde5;
 }
-
+/**
+  todo: look for other color
+ */
 .alert-info .alert-link {
   color: #062c33;
 }
@@ -10191,7 +10196,7 @@ a.text-dark:hover, a.text-dark:focus {
     box-shadow: none !important;
   }
   a:not(.btn) {
-    text-decoration: underline;
+    text-decoration: none;
   }
   abbr[title]::after {
     content: " (" attr(title) ")";

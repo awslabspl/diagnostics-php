@@ -1,0 +1,7 @@
+{
+  "name": "diagnostics-php",
+  "version": "1.0.0",
+  "dependencies": {
+    "commander": "^7.0.0"
+  }
+}

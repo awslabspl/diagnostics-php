@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags::
+    * Turn the spellcheck OFF
+    * Make all content x-ua compatible
+    * Make this web responsive
+    * Set charset to UTF-8
+    * Apply CSS ( 5 > 7 )
+    * Apply JS ( 8 > 9 )
+    * Set title
+    -->
     <meta spellcheck="false">
     <meta http-equiv="x-ua-compatible" content="*/*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="resources/styles/index.css" type="text/css"/>
     <link rel="stylesheet" href="resources/styles/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="resources/styles/tabbedIndex.scss" as="style" type="text/css"/>
+    <script type="text/javascript" src="resources/js/currentdate.js"></script>
+    <script type="text/javascript" src="resources/js/generationtimes.js"></script>
     <title>Diagnostics PHP</title>
 </head>
 <body>
+<!-- Not working as expected on Safari.
+@Todo: Investigate and make it browser-independent -->
+<div class="alert alert-success alert-dismissible">
+    All systems OK.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="alert alert-info alert-primary">
+    There is some work in progress on new look for summary page. <a class="alert-link" href="https://github.com/awslabspl/diagnostics-php/pull/8" target="_blank">Check this out.</a>
+</div>
 <div>
     <table class="sourcestab">
         <tbody>
@@ -22,25 +46,44 @@
         </tr>
         <tr>
             <td>Main repository</td>
-            <td><a href="https://github.com/awslabspl/diagnostics-php" target="_blank">GitHub</a></td>
+            <td><a class="btn btn-link" href="https://github.com/awslabspl/diagnostics-php" target="_blank">GitHub</a></td>
         </tr>
         <tr>
-            <td>Current <strong>stable</strong> version</td>
-            <td>Not yet published</td>
+            <td>Current version</td>
+            <td><a class="btn btn-link" target="_blank" href="https://github.com/awslabspl/diagnostics-php/releases/tag/0.1-pre">0.1-pre</a> </td>
+        </tr>
+        <tr>
+            <td>Last sync date</td>
+            <td><script type="text/javascript">
+                document.write(datetime);
+            </script></td>
+        </tr>
+        <tr>
+            <td>Comment</td>
+            <td><strong>Do not</strong> use it on <code>production</code></td>
         </tr>
         </tbody>
     </table>
 </div>
 <hr>
+<!-- Links table -->
 <div>
     <table class="sourcestab">
         <tbody>
         <tr>
-            <td>Quick start guide</td>
-            <td><a class="btn btn-link" target="_blank" href="https://github.com/awslabspl/diagnostics-php/blob/master/docs/md/quickstart.md">Quickstart</a></td>
+            <td>Quickstart guide</td>
+            <td><a class="btn btn-link" target="_blank" href="https://github.com/awslabspl/diagnostics-php/blob/master/docs/md/quickstart.md">.md</a></td>
+            <td><a class="btn btn-link" target="_blank" href="./htmldocs/quickstart.html">.html</a></td>
         </tr>
         </tbody>
     </table>
+</div>
+<br>
+<!-- Footer
+    @todo: think of a way to inject JS here.
+ -->
+<div class="text-center p-3 customfooter">
+    (c) 2020 :: <a charset="UTF-8" class="text-dark" href="ttps://github.com/awslabspl" target="_blank">awslabspl</a>
 </div>
 </body>
 </html>

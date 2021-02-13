@@ -16,6 +16,7 @@ class deleteFolderContentTest extends TestCase
      * @throws Exception
      * @since 10/02/2021
      * @param deleteFolderContent
+     * @api no
      */
     public function testDelete_folder_and_contents_classes()
     {

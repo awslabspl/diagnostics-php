@@ -29,6 +29,7 @@ class deleteFolderContentTest extends TestCase
     /**
      * @author awslabspl
      * @see https://en.wikipedia.org/wiki/Dry_run_(testing)
+     * @see https://en.wikipedia.org/wiki/Code_review
      */
     private function doDelete(){
         $files = glob(CLASS_FOLDER . '*');
@@ -39,7 +40,7 @@ class deleteFolderContentTest extends TestCase
              * As `rm` command does not have `--dry-run` switch, we will just send output `to the void` instead.....
              *
              *
-             * To learn more about dry-running in software development, see https://en.wikipedia.org/wiki/Dry_run_(testing)
+             * To learn more about dry-running in software development, see https://en.wikipedia.org/wiki/Code_review
              */
             shell_exec('sudo rm -r -d '.CLASS_FOLDER.' > /dev/$1');
         }

@@ -3,7 +3,6 @@
 namespace diagnosticsphp\core\generalInterface;
 
 use generalInterfaceTest;
-use phpDocumentor\Reflection\Types\Array_;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
@@ -30,7 +29,7 @@ class generalInterfaceTestSuite extends TestCase
      * @param array $configuration
      * @return MockObject
      */
-    protected function createConfiguredMock(string $originalClassName, array $configuration): MockObject
+    public function createConfiguredMock(string $originalClassName, array $configuration): MockObject
     {
         $originalClassName = ClassName::class;
         $configuration = $_GET['settings'];

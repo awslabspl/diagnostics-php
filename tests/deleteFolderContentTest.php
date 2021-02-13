@@ -6,13 +6,15 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class deleteFolderContentTest
+ * @note THIS IS DANGEROUS
+ * @covers Exception
+ * @since 10/02/2021
  */
 class deleteFolderContentTest extends TestCase
 {
     /**
      * @throws Exception
      * @since 10/02/2021
-     * @note THIS IS DANGEROUS
      * @param deleteFolderContent
      */
     public function testDelete_folder_and_contents_classes()

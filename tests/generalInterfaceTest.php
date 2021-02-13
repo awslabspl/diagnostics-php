@@ -3,6 +3,7 @@
 namespace diagnosticsphp\core\generalInterface;
 
 use generalInterfaceTest;
+use phpDocumentor\Reflection\Types\Array_;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
@@ -52,5 +53,13 @@ class generalInterfaceTestSuite extends TestCase
     {
         $originalClassName = ClassName::class;
         return parent::createMock($originalClassName);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isRunTestInSeparateProcess(): bool
+    {
+        return $this->runTestInSeparateProcess;
     }
 }

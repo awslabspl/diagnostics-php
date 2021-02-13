@@ -23,4 +23,7 @@ define('REMOTE_INFO_CLASS', '/core/classes/RemoteInfoClass.php');
 define('SCRIPT_CLASS', '/core/classes/ScriptClass.php');
 define('SERVER_CLASS', '/core/classes/ServerClass.php');
 //
-define('NON_EXISTENT_OR_NOT_READABLE', 'Folder does not exist or is not readable');
+define('NON_EXISTENT_OR_NOT_READABLE', 'Does not exist or is not readable');
+//
+define('INTERFACE_FOLDER', '/core/interfaces');
+define('GENERAL_INTERFACE', '/core/interfaces/General.php');

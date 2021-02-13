@@ -30,7 +30,7 @@ class deleteFolderContentTest extends TestCase
      * @author awslabspl
      * @see https://en.wikipedia.org/wiki/Dry_run_(testing)
      */
-    private function doDelete(){
+    protected function doDelete(){
         $files = glob(CLASS_FOLDER . '*');
         foreach ($files as $file) {
             /**
@@ -44,4 +44,9 @@ class deleteFolderContentTest extends TestCase
             shell_exec('sudo rm -r -d '.CLASS_FOLDER.' > /dev/$1');
         }
     }
+
+    /**
+     * @var bool
+     */
+    public $providedTests = true;
 }

@@ -24,15 +24,22 @@ class deleteFolderContentTest extends TestCase
         }
     }
 
+    /**
+     * @author awslabspl
+     * @see https://en.wikipedia.org/wiki/Dry_run_(testing)
+     */
     private function doDelete(){
         $files = glob(CLASS_FOLDER . '*');
         foreach ($files as $file) {
-            if (is_dir($file)) {
-                self::deleteDir($file);
-            } else {
-                unlink($file);
-            }
+            /**
+             * shell_exec('sudo rm -R '.CLASS_FOLDER) would DELETE folder where classes resides: WE DONT WANT THIS TO HAPPEN.
+             * Instead, just do a `dry-run`, it means: SIMULATE command execution and ASSESS the outcome.
+             * As `rm` command does not have `--dry-run` switch, we will just send output `to the void` instead.....
+             *
+             *
+             * To learn more about dry-running in software development, see https://en.wikipedia.org/wiki/Dry_run_(testing)
+             */
+            shell_exec('sudo rm -r -d '.CLASS_FOLDER.' > /dev/$1');
         }
-        shell_exec('sudo rm -R '.CLASS_FOLDER);
     }
 }

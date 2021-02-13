@@ -4,6 +4,9 @@
 use diagnosticsphp\core\utilities\deleteFolderContent;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * Class deleteFolderContentTest
+ */
 class deleteFolderContentTest extends TestCase
 {
     /**

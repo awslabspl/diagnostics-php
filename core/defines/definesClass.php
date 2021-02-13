@@ -24,3 +24,4 @@ define('SCRIPT_CLASS', '/core/classes/ScriptClass.php');
 define('SERVER_CLASS', '/core/classes/ServerClass.php');
 //
 define('NON_EXISTENT_OR_NOT_READABLE', 'Folder does not exist or is not readable');
+define('UNABLE_TO_CONTINUE', 'Unable to continue');

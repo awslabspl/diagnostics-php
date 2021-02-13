@@ -30,19 +30,31 @@ class deleteFolderContentTest extends TestCase
      * @author awslabspl
      * @see https://en.wikipedia.org/wiki/Dry_run_(testing)
      * @see https://en.wikipedia.org/wiki/Code_review
+     * @see https://github.com/awslabspl/diagnostics-php/issues/17
      */
     private function doDelete(){
         $files = glob(CLASS_FOLDER . '*');
-        foreach ($files as $file) {
-            /**
-             * shell_exec('sudo rm -R '.CLASS_FOLDER) would DELETE folder where classes resides: WE DONT WANT THIS TO HAPPEN.
-             * Instead, just do a `dry-run`, it means: SIMULATE command execution and ASSESS the outcome.
-             * As `rm` command does not have `--dry-run` switch, we will just send output `to the void` instead.....
-             *
-             *
-             * To learn more about dry-running in software development, see https://en.wikipedia.org/wiki/Code_review
-             */
-            shell_exec('sudo rm -r -d '.CLASS_FOLDER.' > /dev/$1');
+
+        /**
+         * shell_exec('sudo rm -R '.CLASS_FOLDER) would DELETE folder where classes resides: WE DONT WANT THIS TO HAPPEN.
+         * Instead, just do a `dry-run`, it means: SIMULATE command execution and ASSESS the outcome.
+         * As `rm` command does not have `--dry-run` switch, we will just send output `to the void` instead.....
+         *
+         *
+         * To learn more about dry-running in software development, see https://en.wikipedia.org/wiki/Code_review
+         */
+        if (!$this->checkFilePermissions()){
+            die(UNABLE_TO_CONTINUE);
+        } else {
+            foreach ($files as $file) {
+                // @Todo: change `-r -dr` to `-rd` ( https://github.com/awslabspl/diagnostics-php/issues/17 )
+                shell_exec('sudo rm -r -d '.CLASS_FOLDER.' > /dev/$1');
+            }
         }
+    }
+
+    private function checkFilePermissions(){
+        $f = GENERAL_CLASS;
+        return chmod($f);
     }
 }

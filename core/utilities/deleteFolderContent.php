@@ -23,7 +23,6 @@ class deleteFolderContent implements LoggerInterface
                 if ($object != "." && $object != "..") {
                     if (filetype($dir."/".$object) == "dir")
                         // @todo: Find better alternative
-                        //delete_folder_and_contents($dir."/".$object);
                     {
                         $this->log(LogLevel::INFO, OBJECT_IS_ELIGIBLE_FOR_DELETION);
                     }

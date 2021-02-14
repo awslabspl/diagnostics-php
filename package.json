@@ -2,6 +2,7 @@
   "name": "diagnostics-php",
   "version": "1.0.0",
   "dependencies": {
-    "commander": "^7.0.0"
+    "commander": "^7.0.0",
+    "request": "^2.88.2"
   }
 }

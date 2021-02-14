@@ -29,6 +29,7 @@
         <li class="list-group-item">* unzip source to folder thats accessible from webserver ( consult your webservers' manual ).</li>
         <li class="list-group-item">* edit <code class="kod">$project_config_file</code> to reflect your current setup,</li>
         <li class="list-group-item">* from your project, just load desired class(-es).</li>
+        <li class="list-group-item">* enjoy</li>
     </ul>
     <hr>
     <h2 class="h2">How to load classes in PHP</h2>
@@ -41,18 +42,60 @@
     <h3 class="h3">Enviroment setup:</h3>
     <!-- @Todo: make lists use: https://getbootstrap.com/docs/4.0/components/list-group/#javascript-behavior -->
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">* Download, install and activate <a class="btn btn-link" target="_blank" href="https://www.jetbrains.com/phpstorm/download/#section=mac">PhpStorm</a>,</li>
-        <li class="list-group-item">* <a class="btn btn-link" target="_blank" href="https://github.com/awslabspl/phpstormsettings/archive/1.0.zip">Download</a> and <a class="btn btn-link" target="_blank" href="https://www.jetbrains.com/help/phpstorm/sharing-your-ide-settings.html#import-export-settings-6-procedure">import</a> downloaded settings file(-s),</li>
-        <ul class="list-group-item">* <a class="btn btn-link" target="_blank" href="https://www.jetbrains.com/help/webstorm/manage-projects-hosted-on-github.html#clone-from-GitHub">Clone the repo</a> ,</ul>
-        <ul class="list-group-item">* <a class="btn btn-link" target="_blank" href="https://www.jetbrains.com/help/phpstorm/manage-branches.html#create-branch">Create new branch</a> following simple naming scheme:</ul>
-        <ul class="list-group-item">* if you want to work on things mentioned in an issue ( listed on GH ) -> name your branch <code class="kod">fix-#issue_ID</code>,</ul>
-        <ul class="list-group-item">* if you want to work on things <strong>not</strong> mentioned in an issue -> <code class="kod">dev-description_of_changes</code>,</ul>
+        <li class="list-group-item">* Download, install and activate <a class="btn btn-link" target="_blank"
+                                                                        href="https://www.jetbrains.com/phpstorm/download/#section=mac">PhpStorm</a>,
+        </li>
+        <li class="list-group-item">* <a class="btn btn-link" target="_blank"
+                                         href="https://github.com/awslabspl/phpstormsettings/archive/1.0.zip">Download</a>
+            and <a class="btn btn-link" target="_blank"
+                   href="https://www.jetbrains.com/help/phpstorm/sharing-your-ide-settings.html#import-export-settings-6-procedure">import</a>
+            downloaded settings file(-s),
+        </li>
+        <ul class="list-group-item">* <a class="btn btn-link" target="_blank"
+                                         href="https://www.jetbrains.com/help/webstorm/manage-projects-hosted-on-github.html#clone-from-GitHub">Clone
+            the repo</a> ,
+        </ul>
+        <ul class="list-group-item">* <a class="btn btn-link" target="_blank"
+                                         href="https://www.jetbrains.com/help/phpstorm/manage-branches.html#create-branch">Create
+            new branch</a> following simple naming scheme:
+        </ul>
+        <ul class="list-group-item">* if you want to work on things mentioned in an issue ( listed on GH ) -> name your
+            branch <code class="kod">fix-#issue_ID</code>,
+        </ul>
+        <ul class="list-group-item">* if you want to work on things <strong>not</strong> mentioned in an issue -> <code
+                class="kod">dev-description_of_changes</code>,
+        </ul>
         <ul class="list-group-item">* make changes,</ul>
-        <ul class="list-group-item">* if you are happy with the changes, <a class="btn btn-link" target="_blank" href="https://www.jetbrains.com/help/phpstorm/commit-and-push-changes.html#commit">commit</a>, <a class="btn btn-link" target="_blank" href="https://www.jetbrains.com/help/phpstorm/commit-and-push-changes.html#push">push</a> and wait.....</ul>
+        <ul class="list-group-item">* if you are happy with the changes, <a class="btn btn-link" target="_blank"
+                                                                            href="https://www.jetbrains.com/help/phpstorm/commit-and-push-changes.html#commit">commit</a>,
+            <a class="btn btn-link" target="_blank"
+               href="https://www.jetbrains.com/help/phpstorm/commit-and-push-changes.html#push">push</a> and wait.....
+        </ul>
     </ul>
 </div>
+<hr>
+<div class="container">
+    <h3 class="h3">JS packages</h3>
+    Diagnostics-php uses a lot of JS packages. Once you clone the project repo into PhpStorm, you will be prompted to
+    install these; if you do not, <strong>you will be unable to fully develop your code</strong>.<br>
+    Below you will find all JS packages this project uses ( as in <code class="kod">./package.json</code> file ).<br>
+    <table class="sourcestab">
+        <tbody>
+        <tr>
+            <td>Commander</td>
+            <td>7.0.0</td>
+        </tr>
+        <tr>
+            <td>Momment</td>
+            <td>2.29.1</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<hr>
 <div class="text-center p-3 customfooter">
-    (c) 2020 :: <a charset="UTF-8" class="text-dark" href="ttps://github.com/awslabspl" target="_blank">awslabspl</a> || <a class="btn btn-link" href="../index.html">Index page</a>
+    (c) 2020 :: <a charset="UTF-8" class="text-dark" href="ttps://github.com/awslabspl" target="_blank">awslabspl</a> ||
+    <a class="btn btn-link" href="../index.html">Index page</a>
 </div>
 </body>
 </html>

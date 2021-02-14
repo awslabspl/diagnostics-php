@@ -8,7 +8,9 @@ body {
 }
 
 .customfooter {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    border-color: red;
 }
 
 .imgPanny {
@@ -32,11 +34,10 @@ Added shorthand
     border: 2px black;
 }
 
-.sourcestab tr {
-    border: solid thin;
-}
-
-.sourcestab td {
-    text-align: center;
+.sourcestab tr,
+.sourcestab td,
+.sourcestab thaed {
+    padding-left: 5px;
+    padding-right: 5px;
     border: solid thin;
 }

@@ -1,46 +1,46 @@
 "use strict";
 
-var globalObject = require("@sinonjs/commons").global;
+const globalObject = require("@sinonjs/commons").global;
 
 // eslint-disable-next-line complexity
 function withGlobal(_global) {
-    var userAgent = _global.navigator && _global.navigator.userAgent;
-    var isRunningInIE = userAgent && userAgent.indexOf("MSIE ") > -1;
-    var maxTimeout = Math.pow(2, 31) - 1; //see https://heycam.github.io/webidl/#abstract-opdef-converttoint
-    var NOOP = function () {
+    const userAgent = _global.navigator && _global.navigator.userAgent;
+    const isRunningInIE = userAgent && userAgent.indexOf("MSIE ") > -1;
+    const maxTimeout = Math.pow(2, 31) - 1; //see https://heycam.github.io/webidl/#abstract-opdef-converttoint
+    const NOOP = function () {
         return undefined;
     };
-    var NOOP_ARRAY = function () {
+    const NOOP_ARRAY = function () {
         return [];
     };
-    var timeoutResult = _global.setTimeout(NOOP, 0);
-    var addTimerReturnsObject = typeof timeoutResult === "object";
-    var hrtimePresent =
+    const timeoutResult = _global.setTimeout(NOOP, 0);
+    const addTimerReturnsObject = typeof timeoutResult === "object";
+    const hrtimePresent =
         _global.process && typeof _global.process.hrtime === "function";
-    var hrtimeBigintPresent =
+    const hrtimeBigintPresent =
         hrtimePresent && typeof _global.process.hrtime.bigint === "function";
-    var nextTickPresent =
+    const nextTickPresent =
         _global.process && typeof _global.process.nextTick === "function";
-    var utilPromisify = _global.process && require("util").promisify;
-    var performancePresent =
+    const utilPromisify = _global.process && require("util").promisify;
+    const performancePresent =
         _global.performance && typeof _global.performance.now === "function";
-    var hasPerformancePrototype =
+    const hasPerformancePrototype =
         _global.Performance &&
         (typeof _global.Performance).match(/^(function|object)$/);
-    var queueMicrotaskPresent = _global.hasOwnProperty("queueMicrotask");
-    var requestAnimationFramePresent =
+    const queueMicrotaskPresent = _global.hasOwnProperty("queueMicrotask");
+    const requestAnimationFramePresent =
         _global.requestAnimationFrame &&
         typeof _global.requestAnimationFrame === "function";
-    var cancelAnimationFramePresent =
+    const cancelAnimationFramePresent =
         _global.cancelAnimationFrame &&
         typeof _global.cancelAnimationFrame === "function";
-    var requestIdleCallbackPresent =
+    const requestIdleCallbackPresent =
         _global.requestIdleCallback &&
         typeof _global.requestIdleCallback === "function";
-    var cancelIdleCallbackPresent =
+    const cancelIdleCallbackPresent =
         _global.cancelIdleCallback &&
         typeof _global.cancelIdleCallback === "function";
-    var setImmediatePresent =
+    const setImmediatePresent =
         _global.setImmediate && typeof _global.setImmediate === "function";
 
     // Make properties writable in IE, as per

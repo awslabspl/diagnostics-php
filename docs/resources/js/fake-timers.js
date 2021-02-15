@@ -80,7 +80,7 @@ function withGlobal(_global) {
      * number of milliseconds. This is used to support human-readable strings passed
      * to clock.tick()
      */
-    function parseTime(str) {
+    export function parseTime(str) {
         if (!str) {
             return 0;
         }
@@ -186,7 +186,7 @@ function withGlobal(_global) {
         return target;
     }
 
-    function createDate() {
+   export function createDate() {
         function ClockDate(year, month, date, hour, minute, second, ms) {
             // the Date varructor called as a function, ref Ecma-262 Edition 5.1, section 15.9.2.
             // This remains so in the 10th edition of 2019 as well.

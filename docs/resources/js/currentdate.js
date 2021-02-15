@@ -3,4 +3,4 @@ let datetime = currentdate.getMonth()
     + "/" + currentdate.getFullYear() + " @ "
     + currentdate.getHours() + ":"
     + currentdate.getMinutes();
-console.log(datetime);
+console.log("Today is: "+datetime);

@@ -21,7 +21,7 @@ $dark-blue: darken($main-blue, 28%);
 }
 .inactive{
   position: relative;
-  top:0;
+  top:1px;
 }
 .tabs a {
   display:block;

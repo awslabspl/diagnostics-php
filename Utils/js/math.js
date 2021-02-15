@@ -1,5 +1,5 @@
-export var a = Math.prototype.floor(Math.prototype.random() * 10);
-export var b = Math.prototype.floor(Math.prototype.random() * 10);
+export var a = Math.random() * 10;
+export var b = Math.random() * 10;
 
 export var addition = function (){
     var suma = a + b;

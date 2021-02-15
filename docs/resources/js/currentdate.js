@@ -4,3 +4,5 @@ let datetime = currentdate.getMonth()
     + currentdate.getHours() + ":"
     + currentdate.getMinutes();
 console.log("Today is: "+datetime);
+
+module.exports = datetime;

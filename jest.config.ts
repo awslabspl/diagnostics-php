@@ -183,6 +183,7 @@ export default {
      "\\.pnp\\.[^\\/]+$",
       "/docs/",
       "/core/",
+      "/node_modules/(?!babel)"
   ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them

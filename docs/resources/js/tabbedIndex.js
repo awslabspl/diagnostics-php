@@ -1,4 +1,8 @@
-$('.tabs a').click(function(){
+function $(s) {
+    return s;
+}
+
+$('.tabs a').click(function () {
     $this = $(this);
     $('.panel').hide();
     $('.tabs').removeClass('active').addClass('inactive');

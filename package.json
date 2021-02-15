@@ -6,6 +6,8 @@
     "moment": "^2.29.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.6.3",
     "jest": "^26.6.3",
     "jest-extended": "^0.11.5",
     "ts-node": "^9.1.1"

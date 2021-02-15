@@ -2,3 +2,4 @@ vendor
 testing
 api
 T_*
+/coverage/

@@ -6,3 +6,4 @@ T_*
 /tests/php/
 /docs/resources/js/timers.js
 /tests/results/
+/Utils/patches/

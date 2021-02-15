@@ -1,5 +1,5 @@
-import {a, b} from "../../core/utilities/js/math";
-const mc = require('../../core/utilities/js/math');
+import {a, b} from "../../Utils/js/math";
+const mc = require('../../Utils/js/math');
 
 test("A is more than 0", () => {
     return fetch(mc.a).then(a => {

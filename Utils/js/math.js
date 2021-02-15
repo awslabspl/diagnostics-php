@@ -11,7 +11,7 @@ export var retraction = function() {
         var retr = b - a;
         console.log(retr);
     } else if ((a > b) || (a = b)){
-        const err = require('projectLoggerUtility');
+        const err = require('Utils/js/projectLoggerUtility');
         err.logDigitsMisMatch()
     }
 }
@@ -22,7 +22,7 @@ export var multiplication = function () {
 }
 
 export var division = function () {
-    var l = require('projectLoggerUtility');
+    var l = require('Utils/js/projectLoggerUtility');
     var res = 0;
 
     if ((a < 0) || (b < 0)){

@@ -4,7 +4,7 @@ const globalObject = require("@sinonjs/commons").global;
 
 // eslint-disable-next-line complexity
 export function withGlobal(_global) {
-    export const userAgent = _global.navigator && _global.navigator.userAgent;
+    const userAgent = _global.navigator && _global.navigator.userAgent;
     const isRunningInIE = userAgent && userAgent.indexOf("MSIE ") > -1;
     const maxTimeout = Math.pow(2, 31) - 1; //see https://heycam.github.io/webidl/#abstract-opdef-converttoint
     const NOOP = function () {
@@ -80,7 +80,7 @@ export function withGlobal(_global) {
      * number of milliseconds. This is used to support human-readable strings passed
      * to clock.tick()
      */
-    export function parseTime(str) {
+    function parseTime(str) {
         if (!str) {
             return 0;
         }
@@ -186,7 +186,7 @@ export function withGlobal(_global) {
         return target;
     }
 
-   export function createDate() {
+    function createDate() {
         function ClockDate(year, month, date, hour, minute, second, ms) {
             // the Date varructor called as a function, ref Ecma-262 Edition 5.1, section 15.9.2.
             // This remains so in the 10th edition of 2019 as well.

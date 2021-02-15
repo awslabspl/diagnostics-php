@@ -1,4 +1,4 @@
-var ua = navigator.userAgent;
+const ua = navigator.userAgent;
 test("expect to have UserAgent", ()=>{
-    expect(ua).not.toBeEmpty();
+    expect(ua).toBeInstanceOf(Object);
 });

@@ -1,14 +1,12 @@
-addition = function (){
-    var a = Math.prototype.floor(Math.prototype.random() * 10);
-    var b = Math.prototype.floor(Math.prototype.random() * 10);
+export var a = Math.prototype.floor(Math.prototype.random() * 10);
+export var b = Math.prototype.floor(Math.prototype.random() * 10);
+
+export var addition = function (){
     var suma = a + b;
     return suma;
 }
 
-retraction = function() {
-    var a = Math.prototype.floor(Math.prototype.random() * 10);
-    var b = Math.prototype.floor(Math.prototype.random() * 10);
-
+export var retraction = function() {
     if (a < b){
         var retr = b - a;
         console.log(retr);
@@ -18,16 +16,12 @@ retraction = function() {
     }
 }
 
-multiplication = function () {
-    var a = Math.prototype.floor(Math.prototype.random() * 10);
-    var b = Math.prototype.floor(Math.prototype.random() * 10);
+export var multiplication = function () {
     var res = a * b;
     return res;
 }
 
-division = function () {
-    var a = Math.prototype.floor(Math.prototype.random() * 10);
-    var b = Math.prototype.floor(Math.prototype.random() * 10);
+export var division = function () {
     var l = require('projectLoggerUtility');
     var res = 0;
 

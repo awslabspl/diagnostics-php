@@ -24,3 +24,9 @@ export var logDigitsMisMatch = function(){
     var msg = "A cannot be greater than B"
     console.log("Level: "+severity+" || "+msg);
 }
+
+export var logDivisionByZeroError = function(){
+    var severity = "Critical error";
+    var msg = "Unable to divide by 0"
+    console.log("Level: "+severity+" || "+msg);
+}

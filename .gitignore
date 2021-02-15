@@ -3,3 +3,4 @@ testing
 api
 T_*
 /coverage/
+/tests/php/

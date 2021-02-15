@@ -4,3 +4,6 @@ api
 T_*
 /coverage/
 /tests/php/
+/docs/resources/js/timers.js
+/tests/results/
+/Utils/patches/

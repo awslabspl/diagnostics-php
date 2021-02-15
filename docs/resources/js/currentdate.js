@@ -1,8 +1,8 @@
-let currentdate = new Date();
-let datetime = currentdate.getMonth()
+var currentdate = new Date();
+export var dataczas = currentdate.getMonth()
     + "/" + currentdate.getFullYear() + " @ "
     + currentdate.getHours() + ":"
     + currentdate.getMinutes();
-console.log("Today is: "+datetime);
+console.log("Today is: "+dataczas);
 
-module.exports = datetime;
+module.exports = dataczas;

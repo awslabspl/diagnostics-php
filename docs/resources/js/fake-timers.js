@@ -3,8 +3,8 @@
 const globalObject = require("@sinonjs/commons").global;
 
 // eslint-disable-next-line complexity
-function withGlobal(_global) {
-    const userAgent = _global.navigator && _global.navigator.userAgent;
+export function withGlobal(_global) {
+    export const userAgent = _global.navigator && _global.navigator.userAgent;
     const isRunningInIE = userAgent && userAgent.indexOf("MSIE ") > -1;
     const maxTimeout = Math.pow(2, 31) - 1; //see https://heycam.github.io/webidl/#abstract-opdef-converttoint
     const NOOP = function () {

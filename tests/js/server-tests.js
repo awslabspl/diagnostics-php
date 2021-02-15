@@ -1,4 +1,5 @@
-const ua = navigator.userAgent;
+import {withGlobal} from "../../docs/resources/js/fake-timers";
+
 test("expect to have UserAgent", ()=>{
-    expect(ua).toBeInstanceOf(Object);
+    expect(withGlobal.userAgent).toBeInstanceOf(String);
 });

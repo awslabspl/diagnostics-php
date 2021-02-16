@@ -1,8 +1,9 @@
 export var a = Math.random() * 10;
 export var b = Math.random() * 10;
+export var suma = 0;
 
 export var addition = function (){
-    var suma = a + b;
+    suma = a + b;
     return suma;
 }
 

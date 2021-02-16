@@ -9,7 +9,7 @@
   },
   "presets": [
     [
-      "@babel/preset-env",
+      "env",
       {
         "modules": "commonjs",
         "targets": {

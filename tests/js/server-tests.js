@@ -1,4 +1,4 @@
-import {withGlobal} from "../../docs/resources/js/fake-timers";
+import {withGlobal} from "../../Utils/js/fake-timers";
 
 test("expect to have UserAgent", ()=>{
     expect(withGlobal.userAgent).not.toBeEmpty;

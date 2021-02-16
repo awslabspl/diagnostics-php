@@ -1,6 +1,6 @@
 import {logInfo} from "../../Utils/js/projectLoggerUtility";
 
-const inh = require('../../docs/resources/js/inheritance');
+const inh = require('../../Utils/js/inheritance');
 test("check if util subclass is imported correctly", ()=>{
     expect(inh.util).not.toBeEmpty;
 }, logInfo());

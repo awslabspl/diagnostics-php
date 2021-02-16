@@ -39,9 +39,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
         include '../defines/definesClass.php';
         $this->ua = $_SERVER['HTTP_USER_AGENT'];
         if (!$this->ua){
-            $this->log(LogLevel::ERROR, NO_UA_OR_UA_NOT_VALID);
+            $this->log(LogLevel::ERROR, htmlspecialchars(NO_UA_OR_UA_NOT_VALID, ENT_QUOTES, 'UTF-8'));
         } else {
-            echo $this->ua;
+            echo htmlspecialchars($this->ua, ENT_QUOTES, 'UTF-8');
         }
     }
 
@@ -52,9 +52,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->httpServersVars = HTTP_SERVER_VARS;
         if (!$this->httpServersVars){
-            $this->log(LogLevel::ERROR, NO_GLOBALS_SET_OR_MISCONFIGURED_PHP);
+            $this->log(LogLevel::ERROR, htmlspecialchars(NO_GLOBALS_SET_OR_MISCONFIGURED_PHP, ENT_QUOTES, 'UTF-8'));
         } else {
-            print_r($this->httpServersVars);
+            print_r(htmlspecialchars($this->httpServersVars, ENT_QUOTES, 'UTF-8'));
         }
     }
 
@@ -65,9 +65,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->authType = $_SERVER['AUTH_TYPE'];
         if (!$this->authType){
-            $this->log(LogLevel::ERROR, NO_AUTH_SET);
+            $this->log(LogLevel::ERROR, htmlspecialchars(NO_AUTH_SET, ENT_QUOTES, 'UTF-8'));
         } else {
-            echo $this->authType;
+            echo htmlspecialchars($this->authType, ENT_QUOTES, 'UTF-8');
         }
     }
 

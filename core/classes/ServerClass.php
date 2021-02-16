@@ -35,9 +35,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
         $this->sa = $_SERVER['SERVER_ADDR'];
         if (isset($this->sa)){
             // @todo Implement something more sophisticated
-            echo $this->sa;
+            echo htmlspecialchars($this->sa, ENT_QUOTES, 'UTF-8');
         } else {
-            $this->log(LogLevel::ERROR, NO_SERVER_ADR_DEFINED);
+            $this->log(LogLevel::ERROR, htmlspecialchars(NO_SERVER_ADR_DEFINED, ENT_QUOTES, 'UTF-8'));
         }
     }
 
@@ -49,9 +49,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
         $this->sai = $_SERVER['SERVER_ADMIN'];
         if (isset($this->sai)){
             // @todo Implement something more sophisticated
-            echo $this->sai;
+            echo htmlspecialchars($this->sai, ENT_QUOTES, 'UTF-8');
         } else {
-            $this->log(LogLevel::ERROR, SERVER_ADMIN_INFO);
+            $this->log(LogLevel::ERROR, htmlspecialchars(SERVER_ADMIN_INFO, ENT_QUOTES, 'UTF-8'));
         }
     }
 
@@ -62,9 +62,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
     {
         if (isset($this->sn)){
             // @todo Implement something more sophisticated
-            echo $this->sn;
+            echo htmlspecialchars($this->sn, ENT_QUOTES, 'UTF-8');
         } else {
-            $this->log(LogLevel::ERROR, NO_SERVER_NAME);
+            $this->log(LogLevel::ERROR, htmlspecialchars(NO_SERVER_NAME, ENT_QUOTES, 'UTF-8'));
         }
     }
 
@@ -75,9 +75,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
     {
         if (isset($this->sport)){
             // @todo Implement something more sophisticated
-            echo $this->sport;
+            echo htmlspecialchars($this->sport, ENT_QUOTES, 'UTF-8');
         } else {
-            $this->log(LogLevel::NOTICE, $this->sport);
+            $this->log(LogLevel::NOTICE, htmlspecialchars($this->sport, ENT_QUOTES, 'UTF-8'));
         }
     }
 
@@ -88,9 +88,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
     {
         if (isset($this->sprot)){
             // @todo Implement something more sophisticated
-            echo $this->sprot;
+            echo htmlspecialchars($this->sprot, ENT_QUOTES, 'UTF-8');
         } else {
-            $this->log(LogLevel::NOTICE, $this->sprot);
+            $this->log(LogLevel::NOTICE, htmlspecialchars($this->sprot, ENT_QUOTES, 'UTF-8'));
         }
     }
 
@@ -101,9 +101,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
     {
         if (isset($this->ssign)){
             // @todo Implement something more sophisticated
-            echo $this->ssign;
+            echo htmlspecialchars($this->ssign, ENT_QUOTES, 'UTF-8');
         } else {
-            $this->log(LogLevel::NOTICE, $this->ssign);
+            $this->log(LogLevel::NOTICE, htmlspecialchars($this->ssign, ENT_QUOTES, 'UTF-8'));
         }
     }
 
@@ -114,9 +114,9 @@ abstract class ServerClass implements ServerInfoInterface, LoggerInterface
     {
         if (isset($this->ssoft)){
             // @todo Implement something more sophisticated
-            echo $this->ssoft;
+            echo htmlspecialchars($this->ssoft, ENT_QUOTES, 'UTF-8');
         } else {
-            $this->log(LogLevel::NOTICE, $this->ssoft);
+            $this->log(LogLevel::NOTICE, htmlspecialchars($this->ssoft, ENT_QUOTES, 'UTF-8'));
         }
     }
 }

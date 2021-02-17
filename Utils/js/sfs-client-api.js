@@ -6,6 +6,6 @@
  */
 var sfs = require('stopforumspam');
 export var ip = document.getElementById('ip');
-var mail = "testuser@a.com";
+export var mail = "testuser@a.com";
 export var username = "testuser";
-var user = sfs.User(ip, mail, username);
+export var userToBeTested = username;

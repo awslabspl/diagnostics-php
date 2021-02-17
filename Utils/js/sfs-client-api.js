@@ -5,9 +5,7 @@
  * Copyright (c) 2021.
  */
 var sfs = require('stopforumspam');
-var ip = $.get("http://ipinfo.io", function(response) {
-    alert(response.ip);
-}, "jsonp");
+export var ip = document.getElementById('ip');
 var mail = "testuser@a.com";
-var username = "testuser";
+export var username = "testuser";
 var user = sfs.User(ip, mail, username);

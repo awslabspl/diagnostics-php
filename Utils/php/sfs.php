@@ -18,7 +18,7 @@ $data = array(
         'host' => 'hostname'
 );
 
-$data = http_build_query(self::class);
+$data = http_build_query($data);
 
 // init the request, set some info, send it and finally close it
 $ch = curl_init($url);

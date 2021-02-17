@@ -8,7 +8,8 @@ $url = 'http://api.stopforumspam.org/api';
 
 
 /**
- *
+ * Below is just SAMPLE data used for MOCKING tests.
+ * Replace before any real-world use!
  */
 $data = array(
         'name' => 'newspammer',

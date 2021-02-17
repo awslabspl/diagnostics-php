@@ -6,6 +6,7 @@
         }
     ],
     "require": {
+        "ext-curl": "*",
         "php": "^7.4"
     },
     "autoload": {
@@ -26,9 +27,5 @@
         "log"
     ],
     "license": "MIT",
-    "name": "psr/log",
-    "require": {
-        "php": ">=5.3.0",
-        "phpunit/phpunit": ">=9.0.0"
-    }
+    "name": "psr/log"
 }

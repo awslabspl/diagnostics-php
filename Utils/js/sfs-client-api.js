@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Copyright (c) 2021. awslabspl
+ ******************************************************************************/
 /*
  * Copyright (c) 2021.
  */
@@ -7,7 +10,4 @@ var ip = $.get("http://ipinfo.io", function(response) {
 }, "jsonp");
 var mail = "testuser@a.com";
 var username = "testuser";
-sfs
-
-
 var user = sfs.User(ip, mail, username);

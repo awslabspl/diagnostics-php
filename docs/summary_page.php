@@ -14,8 +14,9 @@
     Page loaded.
 </div>
 <div>
-    <script src="./resources/js/summary_fn.js">
-            console.log(al)
+    <script src="../Utils/js/summary_fn.js">
+            console.log(al);
+            document.write(init);
     </script>
 </div>
 </body>

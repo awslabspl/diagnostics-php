@@ -30,3 +30,8 @@ $class->memberName();
     * if you want to work on things **not** mentioned in an issue -> `dev-<description_of_changes`,
 * make changes,
 * if you are happy with the changes, open PR and wait.....
+
+## JS packages
+
+`Diagnostics-php` uses a lot of JS packages. Once you clone the project into PhpStorm, you will be prompted to install these; if you do not, **you will not be able to fully develop your code**.
+For complete list of dependencies used, please [see this page](https://github.com/awslabspl/diagnostics-php/network/dependencies)

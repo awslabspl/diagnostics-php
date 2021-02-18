@@ -67,9 +67,16 @@ describe("vars within the limits", ()=>{
         expect(sfsca.username.length).not.toBeGreaterThan(max_length_limit);
     });
 });
-describe("vars creation", ()=>{
-    it("Should test creation of element", ()=>{
-        const un = sfsca.username;
-        const is = expect(un).toBeString;
+describe("vars values", ()=>{
+    it("ip", ()=>{
+       expect(sfsca.ip).toMatch(/[1-9]/);
+    });
+
+    it("username",()=>{
+       expect(sfsca.username).toMatch(/[a-zA-Z1-9]/);
+    });
+
+    it("email", ()=>{
+        expect(sfsca.mail).toMatch(/[a-zA-Z1-9]/);
     });
 });

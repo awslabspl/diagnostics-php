@@ -7,3 +7,4 @@ T_*
 /Utils/js/timers.js
 /tests/results/
 /Utils/patches/
+/tests/js/mocks/

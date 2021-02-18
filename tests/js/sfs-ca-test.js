@@ -21,3 +21,11 @@ test("mail is a string", ()=>{
 test("user is in the to-be-tested group", ()=>{
     expect(sfsca.userToBeTested).toStrictEqual(username);
 });
+
+test("userToBeTested is not null/empty", ()=>{
+    expect(sfsca.userToBeTested).not.toBeEmpty;
+});
+
+test("userToBeTested not less than limit", ()=>{
+    expect(sfsca.userToBeTested.length).not.toBeLessThan(sfsca.length_limit);
+});

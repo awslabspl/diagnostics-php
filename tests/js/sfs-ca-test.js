@@ -6,19 +6,33 @@ import {max_length_limit, min_length_limit, username} from "../../Utils/js/sfs-c
 const sfs = require('stopforumspam');
 const sfsca = require('../../Utils/js/sfs-client-api');
 
-describe("correct name type", ()=>{
-    test("ip is a string", ()=>{
+/*describe ("fun with name type", ()=>{
+   test("test1", ()=>{
+      // input
+      const iip = sfsca.ip;
+      const reqType = typeof String;
+      expect(iip).toBe(reqType);
+   });
+});
+describe("correctNameType", ()=>{
+/!*    test("ip is a string", ()=>{
         expect(typeof sfsca.ip).toBe('string');
-    });
 
-    test("name is a string", ()=>{
-        expect(typeof sfsca.username).toBe('string');
+    });*!/
+
+    test("name is a string", (t1)=>{
+        var e = expect(typeof sfsca.username).toBe('string');
+        if (t1){
+            console.log(sfsca.username);
+        } else if (!t1){
+            expect(t1.fail(sfsca.username+" is NOT of type: string"));
+        }
     });
 
     test("mail is a string", ()=>{
         expect(typeof sfsca.mail).toBe('string');
     });
-});
+});*/
 describe("vars set correctly", ()=>{
     test("if ip is set correctly", ()=>{
         expect(sfsca.ip).toBeDefined();

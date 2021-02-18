@@ -7,7 +7,7 @@
 var sfs = require('stopforumspam');
 export var ip = "123.123.123.123";
 export var mail = "testuser@a.com";
-export var username = "testuser";
+export var username = "johnsmith";
 export var userToBeTested = username;
 //
 export var min_length_limit = 5;

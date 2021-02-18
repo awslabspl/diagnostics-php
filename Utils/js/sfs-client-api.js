@@ -5,9 +5,10 @@
  * @summary Uses stopforumspam.com's API
  */
 var sfs = require('stopforumspam');
-export var ip = document.getElementById('ip');
+export var ip = "123.123.123.123";
 export var mail = "testuser@a.com";
 export var username = "testuser";
 export var userToBeTested = username;
 //
-export var length_limit = 5;
+export var min_length_limit = 5;
+export var max_length_limit = 20;

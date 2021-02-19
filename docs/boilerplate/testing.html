@@ -22,20 +22,16 @@
     <script type="text/javascript" src="../../Utils/js/generationtimes.js"></script>
     <title>Diagnostics PHP</title>
 </head>
-<script type="text/javascript">
-    function openlink(){
-/*        const link = document.getElementById('wto');
-        window.open(link.nodeValue);*/
-        var userinput = prompt();
-        var url = userinput;
-        window.open(url);
+<body>
+<script type="text/javascript" async="true">
+    function openThis(){
+        var okno = window.prompt("Podaj strone docelowa ( bez https:// ) :");
+        window.open("https://" + okno);
     }
 </script>
-<body onload="openlink();">
-<div class="container">
-    Web to open <input type="url" accept="text/plain" autocomplete="true" id="wto" placeholder="Enter URL to open it" />
-    <button class="btn btn-link" type="button" formtarget="_blank" onclick="openlink();">Open web</button>
-</div>
+<script type="text/javascript">
+    openThis();
+</script>
 <div class="text-center p-3 customfooter">
     (c) 2020 :: <a charset="UTF-8" class="text-dark" href="ttps://github.com/awslabspl" target="_blank">awslabspl</a>
 </div>

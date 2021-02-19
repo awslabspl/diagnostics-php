@@ -59,7 +59,12 @@ export function bom(blob, opts) {
             type: blob.type,
             endings: "transparent"
         });
+
+        if ((typeof blob === 'string') || (typeof blob === 'undefined')){
+            console.log(blob.length);
+        }
     }
+
     return blob;
 }
 

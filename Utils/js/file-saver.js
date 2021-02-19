@@ -14,8 +14,18 @@
  ******************************************************************************/
 
 export function globalFunction() {
-    if (typeof define === "function" && define.amd) {
-        define([], factory);
+    if (typeof globalFunction === "function") {
+        if (define.amd) {
+            define([], factory);
+        } else if (typeof exports !== "undefined") {
+            factory();
+        } else {
+            var mod = {
+                exports: {}
+            };
+            factory();
+            global.FileSaver = mod.exports;
+        }
     } else if (typeof exports !== "undefined") {
         factory();
     } else {

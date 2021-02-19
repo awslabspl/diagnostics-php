@@ -1,0 +1,1 @@
+export var wopen = window.open($_POST['wto'])

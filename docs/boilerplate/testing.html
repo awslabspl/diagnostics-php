@@ -28,10 +28,17 @@
         var okno = window.prompt("Podaj strone docelowa ( bez https:// ) :");
         window.open("https://" + okno);
     }
+
+    function reload(){
+        window.reload();
+    }
 </script>
 <script type="text/javascript">
     openThis();
 </script>
+<div class="alert alert-primary alert-info">
+    To reopen input dialog, refresh page ( F5 ) or <a class="alert-link" onclick="reload();">click here</a>
+</div>
 <div class="text-center p-3 customfooter">
     (c) 2020 :: <a charset="UTF-8" class="text-dark" href="ttps://github.com/awslabspl" target="_blank">awslabspl</a>
 </div>

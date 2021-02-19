@@ -10,3 +10,4 @@ T_*
 /tests/js/mocks/
 /.github/patches/
 /tests/html/
+/.idea/

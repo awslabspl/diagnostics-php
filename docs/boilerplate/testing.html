@@ -30,9 +30,9 @@
 </script>
 <body>
 <div class="container">
-<form name="opener" method="post" action="tests/js/runner.js">
-    Web to open <input type="url" accept="text/plain" autocomplete="true" id="wto" />
-    <button class="btn btn-link" type="button" onclick="openlink();">Open web</button>
+<form name="opener" id="openlinkform">
+    Web to open <input type="url" accept="text/plain" autocomplete="true" id="wto" placeholder="Enter URL to open it" />
+    <button class="btn btn-link" type="button" formtarget="_blank" onclick="openlink();">Open web</button>
 </form>
 </div>
 <div class="text-center p-3 customfooter">

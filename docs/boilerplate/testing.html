@@ -19,12 +19,16 @@
     <link rel="stylesheet" href="../resources/styles/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="../resources/styles/tabbedIndex.scss" as="style" type="text/css"/>
     <script type="text/javascript" src="../../Utils/js/currentdate.js"></script>
-    <script type="text/javascript" src="../Utils/js/generationtimes.js"></script>
+    <script type="text/javascript" src="../../Utils/js/generationtimes.js"></script>
+    <script type="text/javascript" src="../../tests/js/runner.js"></script>
     <title>Diagnostics PHP</title>
 </head>
 <body>
 <div class="container">
-
+<form name="opener" method="post" action="tests/js/runner.js">
+    Web to open <input type="url" accept="text/plain" minlength="5" maxlength="40" id="wto" />
+    <button class="btn btn-link" type="button" onclick="window.open($_POST['wto'])">Open web</button>
+</form>
 </div>
 <div class="text-center p-3 customfooter">
     (c) 2020 :: <a charset="UTF-8" class="text-dark" href="ttps://github.com/awslabspl" target="_blank">awslabspl</a>

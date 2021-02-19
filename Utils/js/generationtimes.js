@@ -1,4 +1,4 @@
-var timerStart = Date.now();
+const timerStart = Date.now();
 $(document).ready(function() {
     console.log("Time until DOMready: ", Date.now()-timerStart);
 });

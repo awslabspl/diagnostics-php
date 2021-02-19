@@ -56,7 +56,8 @@ export function bom(blob, opts) {
 
     if (opts.autoBom && /^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(blob.type)) {
         return new Blob([String.fromCharCode(0xFEFF), blob], {
-            type: blob.type
+            type: blob.type,
+            endings: "transparent"
         });
     }
     return blob;

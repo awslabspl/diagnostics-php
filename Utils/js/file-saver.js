@@ -29,7 +29,7 @@ export function globalFunction() {
     } else if (typeof exports !== "undefined") {
         factory();
     } else {
-        var mod = {
+         mod = {
             exports: {}
         };
         factory();

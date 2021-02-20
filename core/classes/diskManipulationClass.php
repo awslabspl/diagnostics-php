@@ -1,14 +1,13 @@
 <?php
 
 
-namespace diagnosticsphp\core\scriptClass\dmClass;
+namespace diagnosticsphp\utils;
 
 
-use diagnosticsphp\core\utilities\{deleteFolderContent};
-
+use diagnosticsphp\Utils\php\deleteFolderContent;
 /**
  * Class diskManipulationClass
- * @package diagnosticsphp\core\scriptClass\dmClass
+ * @package diagnosticsphp\utils
  */
 class diskManipulationClass
 {
@@ -17,10 +16,11 @@ class diskManipulationClass
      * @return string $dir
      * @since 14/02/2021
      */
-    public function deleteFolder($dir){
-        $d = new deleteFolderContent();
+    public function deleteFolder($dir): string
+    {
+        $d = new \diagnosticsphp\utils\deleteFolderContent();
         $dir = __DIR__;
-        $d->delete_folder_and_contents($dir);
+        $d->delete_folder_and_all_its_contents($dir);
 
         return $dir;
     }

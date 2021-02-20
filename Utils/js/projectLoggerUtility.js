@@ -18,6 +18,12 @@ var logInfo = function(){
     console.log("Level: "+severity);
 }
 
+var logMinor = function(){
+    var severity = "Minor";
+    var msg = "This is minor level message";
+    console.log("Level:" +severity+" Logged message: "+msg);
+}
+
 // Math.js specific messages
 var logDigitsMisMatch = function(){
     var severity = "Critical error";

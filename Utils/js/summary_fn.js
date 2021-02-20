@@ -3,5 +3,5 @@
  ******************************************************************************/
 
 // import {output} from "./checks/browser";
-export var al = console.log("Sample");
-export var init = "awslabspl";
+export const owner = "awslabspl";
+export const prodName = "diagnostics-php"

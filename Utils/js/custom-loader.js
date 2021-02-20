@@ -4,8 +4,8 @@
 
 import path from 'path';
 
-export const ESM_WITH_JS_EXT = './MyFile.js'; // relative to loader path
-export const ESM_WITH_JS_EXT_URL = new URL(path.dirname(import.meta.url) + `/${ESM_WITH_JS_EXT}`).href;
+export const ESM_WITH_JS_EXT = '/'; // relative to loader path
+export const ESM_WITH_JS_EXT_URL = new URL(path.dirname("js") + `/${ESM_WITH_JS_EXT}`).href;
 
 export function resolve(specifier, parentModuleURL, defaultResolver) {
     const resolvedModule = defaultResolver(specifier, parentModuleURL);

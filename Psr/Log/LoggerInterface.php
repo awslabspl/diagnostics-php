@@ -111,6 +111,15 @@ interface LoggerInterface
     public function debug($message, array $context = array());
 
     /**
+     *  Detailed minor effect log information.
+     *
+     * @param $message
+     * @param array $content
+     * @return mixed
+     */
+    public function minor($message, array $content = array());
+
+    /**
      * Logs with an arbitrary level.
      *
      * @param mixed   $level

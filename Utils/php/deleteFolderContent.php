@@ -21,11 +21,9 @@ class deleteFolderContent
             $objects = scandir($dir);
             foreach ($objects as $object) {
                 if ($object != "." && $object != "..") {
-                    if (filetype($dir . "/" . $object) == "dir")
-                        // @todo: Find better alternative
-                        //delete_folder_and_contents($dir."/".$object);
-                    {
-                        $this->log(LogLevel::INFO, OBJECT_IS_ELIGIBLE_FOR_DELETION);
+                    if (filetype($dir . "/" . $object) == "dir"){
+                        $this->log(LogLevel::MINOR, OBJECT_IS_ELIGIBLE_FOR_DELETION);
+                        shell_exec('sudo rm -r '.$dir);
                     } else unlink($dir . "/" . $object);
                 }
             }

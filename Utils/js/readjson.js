@@ -1,2 +1,3 @@
-let json = require('../json/cve-api-params.json');
-console.log(json);
+let jsonimp = require("../json/cve-api-params.json");
+var data = JSON.parse(jsonimp);
+console.log(data);

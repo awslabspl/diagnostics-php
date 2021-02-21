@@ -12,3 +12,4 @@ T_*
 /tests/html/
 /.idea/
 /Utils/boilerplate/
+/Utils/json/*.txt

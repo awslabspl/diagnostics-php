@@ -19,5 +19,5 @@
   "scripts": {
     "test": "jest"
   },
-  "type": "commonjs"
+  "type": "module"
 }

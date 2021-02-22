@@ -11,3 +11,5 @@ T_*
 /.github/patches/
 /tests/html/
 /.idea/
+/Utils/boilerplate/
+/Utils/json/*.txt

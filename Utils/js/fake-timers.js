@@ -47,6 +47,7 @@ export function withGlobal(_global) {
     // http://www.adequatelygood.com/Replacing-setTimeout-Globally.html
     /* eslint-disable no-self-assign */
     if (isRunningInIE) {
+        // noinspection SillyAssignmentJS
         _global.setTimeout = _global.setTimeout;
         _global.clearTimeout = _global.clearTimeout;
         _global["setInterval"] = _global.setInterval;
@@ -976,7 +977,7 @@ export function withGlobal(_global) {
         }
 
         /**
-         * @param {tickValue} {String|Number} number of milliseconds or a human-readable value like "01:11:15"
+         * @param tickValue
          */
         clock.tick = function tick(tickValue) {
             return doTick(tickValue, false);

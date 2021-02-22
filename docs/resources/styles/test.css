@@ -1,0 +1,45 @@
+/**
+Todo: Add meta-comment
+ */
+body {
+  font-size: 18px !important;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.customfooter {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-width: 1px;
+  border-color: red;
+}
+
+.imgPanny {
+  width: 650px;
+  height: 500px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+div {
+  text-align: justify;
+  font-family: "Arial Narrow", serif;
+  font-stretch: normal;
+  font-size: inherit;
+}
+
+/**
+Added shorthand
+ */
+.sourcestab {
+  border-collapse: collapse;
+  border: 2px black;
+}
+
+.sourcestab tr,
+.sourcestab td,
+.sourcestab thaed {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid thin;
+}
+/*# sourceMappingURL=test.css.map */

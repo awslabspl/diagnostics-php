@@ -1,15 +1,31 @@
+# Vendor
 vendor
-testing
-api
+
+# Folders / Files with this regex are alpha-stage
 T_*
+
+# Coverage reports
 /coverage/
-/tests/php/
+
+# Timers (JS)
 /Utils/js/timers.js
-/tests/results/
-/Utils/patches/
-/tests/js/mocks/
+
+# Patches
 /.github/patches/
+
+# HTML in tests
 /tests/html/
+
+# Config
 /.idea/
+
+# Boilerplate
 /Utils/boilerplate/
+
+# Txt files into JSON
 /Utils/json/*.txt
+
+# MarkDown
+/Utils/json/.markdownlint
+Utils/json/mdown.json
+markdown.yaml

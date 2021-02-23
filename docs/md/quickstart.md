@@ -2,7 +2,7 @@
 
 ## If you are a user....
 Just follow simple steps:
-* go to [download page](https://github.com/awslabspl/diagnostics-php/releases),
+* go to [download page](https://bitbucket.org/aws-labs/diagnostics-php/downloads/),
 * download **latest** release (marked as stable),
 * unzip source to folder thats accessible from webserver ( consult your webservers' manual ).
 * edit `$project_config_file` to reflect your current setup,

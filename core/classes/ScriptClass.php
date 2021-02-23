@@ -25,10 +25,10 @@ abstract class ScriptClass implements ScriptInfoInterface, LoggerInterface
     {
         $this->scn = $_SERVER['SCRIPT_NAME'];
         if (isset($this->scn)){
-            echo $this->scn;
+            echo htmlspecialchars($this->scn);
         } else {
-            echo $this->scn;
-            $this->log(LogLevel::NOTICE, "Script name: ".$this->scn);
+            echo htmlspecialchars($this->scn);
+            $this->log(LogLevel::NOTICE, htmlspecialchars($this->scn, NO_SCRIPT_LOADED, 'UTF-8'));
         }
     }
 
@@ -39,10 +39,10 @@ abstract class ScriptClass implements ScriptInfoInterface, LoggerInterface
     {
         $this->sfn = $_SERVER['SCRIPT_FILENAME'];
         if (isset($this->sfn)){
-            echo $this->sfn;
+            echo htmlspecialchars($this->sfn);
         } else {
             echo $this->sfn;
-            $this->log(LogLevel::NOTICE, "File name: ".$this->sfn);
+            $this->log(LogLevel::ERROR, htmlspecialchars($this->sfn, NO_SCRIPT_LOADED, 'UTF-8'));
         }
     }
 }

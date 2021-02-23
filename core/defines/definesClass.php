@@ -15,6 +15,7 @@ define ('NO_HOSTNAME_SET', "No hostname is set. Using default one");
 define ('NO_REFERER_SET', "No referer set. Site accessed directly");
 define ('NO_HTTPS', "No HTTPS is set.");
 define ('NO_CHARSET','No charset is set');
+define ('NO_LANG_SET', 'No language is set');
 //
 define('OBJECT_IS_ELIGIBLE_FOR_DELETION', 'Object can be deleted safely');
 //

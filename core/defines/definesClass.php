@@ -16,6 +16,7 @@ define ('NO_REFERER_SET', "No referer set. Site accessed directly");
 define ('NO_HTTPS', "No HTTPS is set.");
 define ('NO_CHARSET','No charset is set');
 define ('NO_LANG_SET', 'No language is set');
+define ('NO_PORT_SET', 'No remote port set.');
 //
 define('OBJECT_IS_ELIGIBLE_FOR_DELETION', 'Object can be deleted safely');
 //
@@ -25,7 +26,7 @@ define('REMOTE_INFO_CLASS', '/core/classes/RemoteInfoClass.php');
 define('SCRIPT_CLASS', '/core/classes/ScriptClass.php');
 define('SERVER_CLASS', '/core/classes/ServerClass.php');
 //
-define('NON_EXISTENT_OR_NOT_READABLE', 'Folder does not exist or is not readable');
+define('NON_EXISTENT_OR_NOT_READABLE', 'Resource does not exist or is not readable');
 define('UNABLE_TO_CONTINUE', 'Unable to continue');
 //
 define('DEPRECATION_NOTICE', 'This object is deprecated');

@@ -78,9 +78,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->docRoot = $_SERVER['DOCUMENT_ROOT'];
         if (!$this->docRoot){
-            $this->log(LogLevel::ERROR, NO_ROOT_SET);
+            $this->log(LogLevel::ERROR, htmlspecialchars($this->docRoot, NO_ROOT_SET, 'UTF-8'));
         } else {
-            echo $this->docRoot;
+            echo htmlspecialchars($this->docRoot, NO_ROOT_SET, 'UTF-8');
         }
     }
 
@@ -91,9 +91,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->gwi = $_SERVER['GATEWAY_INTERFACE'];
         if (!$this->gwi){
-            $this->log(LogLevel::ERROR, NO_GATEWAY_SET);
+            $this->log(LogLevel::ERROR, htmlspecialchars($this->gwi, NO_GATEWAY_SET, 'UTF-8'));
         } else {
-            echo $this->gwi;
+            echo htmlspecialchars($this->gwi, NO_GATEWAY_SET, 'UTF-8');
         }
     }
 
@@ -104,7 +104,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->httpAccept = $_SERVER['HTTP_ACCEPT'];
         if (!$this->httpAccept){
-            $this->log(LogLevel::INFO, SERVER_ACCEPTS);
+            $this->log(LogLevel::INFO, htmlspecialchars($this->httpAccept, SERVER_ACCEPTS, 'UTF-8'));
+        } else {
+            echo htmlspecialchars($this->httpAccept, SERVER_ACCEPTS, 'UTF-8');
         }
     }
 
@@ -114,8 +116,10 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     public function getHttpEncoding()
     {
         $this->httpEncoding = $_SERVER['HTTP_ACCEPT_ENCODING'];
-        if (!$this->httpEncoding){
-            $this->log(LogLevel::INFO, SERVER_ACCEPTS);
+        if (!$this->httpEncoding) {
+            $this->log(LogLevel::INFO, htmlspecialchars($this->httpAccept, SERVER_ACCEPTS, 'UTF-8'));
+        } else {
+            echo htmlspecialchars($this->httpAccept, SERVER_ACCEPTS, 'UTF-8');
         }
     }
 
@@ -126,7 +130,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->charset = $_SERVER['HTTP_ACCEPT_CHARSET'];
         if (!$this->charset){
-            $this->log(LogLevel::INFO, SERVER_ACCEPTS);
+            $this->log(LogLevel::INFO, htmlspecialchars($this->charset, NO_CHARSET, 'UTF-8'));
+        } else {
+            echo htmlspecialchars($this->charset, NO_CHARSET, 'UTF-8');
         }
     }
 
@@ -137,7 +143,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->usedRealLanguage = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
         if (!$this->usedRealLanguage){
-            $this->log(LogLevel::INFO, SERVER_ACCEPTS);
+            $this->log(LogLevel::INFO, htmlspecialchars($this->usedRealLanguage, NO_LANG_SET, 'UTF-8'));
+        } else {
+            echo htmlspecialchars($this->usedRealLanguage, NO_LANG_SET, 'UTF-8');
         }
     }
 
@@ -147,7 +155,7 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     public function getConnectionDetails()
     {
         $this->connDetails = $_SERVER['HTTP_CONNECTION'];
-        print_r($this->connDetails);
+        print_r(htmlspecialchars($this->connDetails));
     }
 
     /**
@@ -157,9 +165,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->httpHost = $_SERVER['HTTP_HOST'];
         if (!$this->httpHost){
-            $this->log(LogLevel::WARNING, NO_HOSTNAME_SET);
+            $this->log(LogLevel::WARNING, htmlspecialchars($this->httpHost, NO_HOSTNAME_SET, 'UTF-8'));
         } else {
-            echo $this->httpHost;
+            echo htmlspecialchars($this->httpHost, NO_HOSTNAME_SET, 'UTF-8');
         }
     }
 
@@ -170,9 +178,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->httpReferer = $_SERVER['HTTP_REFERER'];
         if (!$this->httpReferer){
-            $this->log(LogLevel::INFO, NO_REFERER_SET);
+            $this->log(LogLevel::INFO, htmlspecialchars($this->httpReferer, NO_REFERER_SET, 'UTF-8'));
         } else {
-            echo $this->httpReferer;
+            echo htmlspecialchars($this->httpReferer, NO_REFERER_SET, 'UTF-8');
         }
     }
 
@@ -183,7 +191,9 @@ abstract class GeneralInfoClass implements General, LoggerInterface
     {
         $this->https = $_SERVER['HTTPS'];
         if ((0 == !$this->https) || (!HTTP_SERVER_VARS['https'])){
-            $this->log(LogLevel::WARNING, NO_HTTPS);
+            $this->log(LogLevel::WARNING, htmlspecialchars($this->https, NO_HTTPS, 'UTF-8'));
+        } else {
+            echo htmlspecialchars($this->https, NO_HTTPS,'UTF-8');
         }
     }
 }

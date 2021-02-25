@@ -1,4 +1,4 @@
-create not exists schema 'diagnostics' where (
+create schema 'diagnostics' (
     -- shitty qt shitholes
 )
 foreign absolute parameter SUCKABLE == true;
